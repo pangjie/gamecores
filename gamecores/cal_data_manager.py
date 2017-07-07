@@ -28,7 +28,6 @@ class DBcore(object):
         """
         Initialize database.
         """
-
         # Clean database.
         cls.db.purge()
         # Build and insert wiki source data.
