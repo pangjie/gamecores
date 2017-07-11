@@ -44,6 +44,11 @@ class DBcore(object):
             cls.db.insert(src)
         return
 
+    '''
+    ##########################################################################
+    This section below might be abandoned.
+    '''
+
     @classmethod
     def add_src(cls, year):
         """
@@ -73,6 +78,11 @@ class DBcore(object):
         Show every wiki source page.
         """
         return cls.db.search(cls.Q.type == 'sch_src')
+
+    '''
+    This section above might be abandoned.
+    ##########################################################################
+    '''
 
     @classmethod
     def update_sch(cls, id, sch_dict_list):
