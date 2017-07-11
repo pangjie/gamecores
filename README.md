@@ -24,6 +24,10 @@ Developing...
     `pip install beautifulsoup4`
     1. Create `scrape_sch(url)` to scrape release information from wiki and return a info-dictionary list. The info-dictionary has four elements: title, platform, release date, url.
         [ ] `sch(table)`
+        [ ] sss
+        - [ ] sss
+        + [ ] sss
+        + [x] sss
         * `usch(table)`
         * `gen_rls_ts(desc)`
     2. Create `fixer(key, value)` to format original information scraped from html. 
