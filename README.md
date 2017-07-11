@@ -23,24 +23,20 @@ Developing...
     `pip install requests`  
     `pip install beautifulsoup4`
     1. Create `scrape_sch(url)` to scrape release information from wiki and return a info-dictionary list. The info-dictionary has four elements: title, platform, release date, url.  
-        - `sch(table)`
         + `sch(table)`
-        * [ ] sss
-        - [ ] sss
-        + [ ] sss
-        + [x] sss
-        * `usch(table)`
-        * `gen_rls_ts(desc)`
+        + 
+        + `usch(table)`
+        + `gen_rls_ts(desc)`
     2. Create `fixer(key, value)` to format original information scraped from html. 
-        * `fix_key(key)`
-        * `fix_value(value)`
-        * `fix_title(value)`
-        * `fix_platform(value)`
-        * `fix_date(value)`
+        + `fix_key(key)`
+        + `fix_value(value)`
+        + `fix_title(value)`
+        + `fix_platform(value)`
+        + `fix_date(value)`
     3. Create `extract_inforbox(url)` to extract details from urls of games' wiki pages. 
-        * `pip install shortuuid`
-        * `pip install tinydb`
-        * The basic functions of this module include initial a database and add/remove/show/update/search data. 
+        + `pip install shortuuid`
+        + `pip install tinydb`
+        + The basic functions of this module include initial a database and add/remove/show/update/search data. 
 2. Create a module called `cal_data_manager.py` to organize and manage data with `TinyDB`.
 3. Create `cal_core.py` for handling everything about the game calendar data.
 
