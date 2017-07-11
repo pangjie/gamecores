@@ -19,19 +19,19 @@ Developing...
 
 ### 2. Game Calendar
 
-1. Create a module called `cal_scrape_wiki.py` to scrape game release date from wiki game.
-   `pip install requests`
+1. Create a module called `cal_scrape_wiki.py` to scrape game release date from wiki game.  
+   `pip install requests`  
    `pip install beautifulsoup4`
    1. Create `scrape_sch(url)` to scrape release information from wiki and return a info-dictionary list. The info-dictionary has four elements: title, platform, release date, url.
-      * [x] `sch(table)`
-      * [x] `usch(table)`
-      * [x] `gen_rls_ts(desc)`
+      * `sch(table)`
+      * `usch(table)`
+      * `gen_rls_ts(desc)`
    2. Create `fixer(key, value)` to format original information scraped from html.
-      * [x] `fix_key(key)`
-      * [x] `fix_value(value)`
-      * [x] `fix_title(value)`
-      * [x] `fix_platform(value)`
-      * [x] `fix_date(value)`
+      * `fix_key(key)`
+      * `fix_value(value)`
+      * `fix_title(value)`
+      * `fix_platform(value)`
+      * `fix_date(value)`
    3. Create `extract_inforbox(url)` to extract details from urls of games' wiki pages.
       * `pip install shortuuid`
       * `pip install tinydb`
