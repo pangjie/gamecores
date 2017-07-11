@@ -11,7 +11,7 @@ Developing...
 1. Create Github Repository 
     `git@github.com:pangjie/gamecores`
 2. Clone to local
-    1. `$ git clone git@github.com:pangjie/gamecores`
+    `$ git clone git@github.com:pangjie/gamecores`
 3. Create & Active Python virtual environment.
     `$ virtualenv .venv`
     `$ . .venv/bin/activate`
@@ -26,7 +26,8 @@ Developing...
         * `sch(table)`
         * `usch(table)`
         * `gen_rls_ts(desc)`
-    2. Create `fixer(key, value)` to format original information scraped from html.
+    2. Create `fixer(key, value)` to format original information scraped from html. lksdjfl.  
+    3. lskdj
         * `fix_key(key)`
         * `fix_value(value)`
         * `fix_title(value)`
