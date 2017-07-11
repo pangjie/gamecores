@@ -27,7 +27,7 @@ Developing...
         * `usch(table)`
         * `gen_rls_ts(desc)`
     2. Create `fixer(key, value)` to format original information scraped from html. lksdjfl.  
-    3. lskdj
+    lskdj
         * `fix_key(key)`
         * `fix_value(value)`
         * `fix_title(value)`
