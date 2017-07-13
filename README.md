@@ -48,7 +48,7 @@ Developing...
         + `search` Search database by rules.
 3. Create `cal_core.py` for handling everything about the game calendar data.
     1. Create a function called `update_cal_db` for updating the db with new data on wiki sources.  
-4. For making Gamecores more delayering, delete `cal_core.py` and absorb `cal_data_manager.py` to `gamecores.py`
+4. For making Gamecores more delayering, delete `cal_core.py` and absorbe `cal_data_manager.py` to `gamecores.py`
 
 ###  Pre-Publish `gamecores` In Pypi For Test
 
