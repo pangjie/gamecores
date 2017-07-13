@@ -32,10 +32,10 @@ class DBcore(object):
         cls.db.purge()
         # Build and insert wiki source data.
         src = {}
-        src['type'] = 'sch_src'
+        src['type'] = 'wiki_src'
         src['active'] = True
         src['modified_ts'] = ''
-        src['timestamp'] = 0
+        src['update_ts'] = 0
         for i in xrange(2008, 2019):
             src['url'] = 'https://en.wikipedia.org/wiki/' +\
                          str(i) + '_in_video_gaming'
@@ -44,18 +44,13 @@ class DBcore(object):
             cls.db.insert(src)
         return
 
-    '''
-    ##########################################################################
-    This section below might be abandoned.
-    '''
-
     @classmethod
     def add_src(cls, year):
         """
         Active the wiki source of the year.
         """
         cls.db.update({'active': True},
-                      (cls.Q.type == 'sch_src') &
+                      (cls.Q.type == 'wiki_src') &
                       (cls.Q.year == year))
         return
 
@@ -66,10 +61,20 @@ class DBcore(object):
         Clean the data from the wiki source.
         """
         cls.db.update({'active': False},
-                      (cls.Q.type == 'sch_src') &
+                      (cls.Q.type == 'wiki_src') &
                       (cls.Q.year == year))
         cls.db.remove((cls.Q.type == 'sch') &
                       (cls.Q.year == year))
+        return
+
+    @classmethod
+    def update_src(cls, src_dict):
+        """
+        Update wiki source data such as update_ts and modified_ts.
+        """
+        cls.db.update(src_dict,
+                      (cls.Q.type == 'wiki_src') &
+                      (cls.Q.year == src_dict['year']))
         return
 
     @classmethod
@@ -77,15 +82,10 @@ class DBcore(object):
         """
         Show every wiki source page.
         """
-        return cls.db.search(cls.Q.type == 'sch_src')
-
-    '''
-    This section above might be abandoned.
-    ##########################################################################
-    '''
+        return cls.db.search(cls.Q.type == 'wiki_src')
 
     @classmethod
-    def update_sch(cls, id, sch_dict_list):
+    def update(cls, id, sch_dict_list):
         """
         Replace the old schedule data with new schedule data.
         id: The wiki source id.
@@ -100,33 +100,24 @@ class DBcore(object):
         return
 
     @classmethod
-    def update_src(cls, src_dict):
+    def show(cls):
         """
-        Update wiki source data such as timestamp and modified_ts.
-        """
-        cls.db.update(src_dict,
-                      (cls.Q.type == 'sch_src') &
-                      (cls.Q.year == src_dict['year']))
-        return
-
-    @classmethod
-    def show_sch(cls):
-        """
-        Return any schedule data in the database.
+        Return schedule data in the database.
         """
         return cls.db.search(where('type') == 'sch')
 
     @classmethod
-    def search_pf(cls, *args):
+    def search(cls, filed, *args):
         """
         Return the schedule data who contain platforms in *args.
         """
         def pf(val, pf):
-            return bool(set(val).intersection(set(pf)))
-        return cls.db.search(cls.Q.platform.test(pf, args))
+            return bool(set(val).intersection(list(pf)))
+        if filed == 'platform':
+            return cls.db.search(cls.Q.platform.test(pf, args))
+        return []
 
 
 if __name__ == '__main__':
-    for i in DBcore.show_sch():
-        # print i['platform']
-        print i
+    for i in DBcore.search('platform', 'NS'):
+        print i['title'].encode('utf-8')
