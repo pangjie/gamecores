@@ -79,17 +79,46 @@ def calupdate():
     return
 
 
-# @cal.command()
-def calshow(filed, *args):
+@cal.command()
+@click.option('--title', default='')
+@click.option('--platform', default='NS&PS4|NS')
+def calsearch(title, platform):
     """Show information in the database"""
     print("Trying to show something")
+    print title
+    print platform.split('|')
 
     # Search Platform
-    def pf(val, pf):
-        return bool(set(val).intersection(list(pf)))
-    if filed == 'platform':
-        return db.search(Q.platform.test(pf, args))
-    return []
+    # def pf(val, pf):
+    #     # print list(pf)
+    #     return bool(set(val).intersection(pf.split('|')))
+
+    # if platform != '':
+    #     for i in db.search(Q.platform.test(pf, platform)):
+    #         print i['title'].encode('utf-8')
+
+    def xpf(val, pf):
+        # print list(pf)
+        return bool(set(val).issuperset(pf.split('&')))
+
+    # if xplatform != '':
+    #     for i in db.search(Q.platform.test(xpf, xplatform)):
+    #         print i['title'].encode('utf-8')
+
+    # if '&' in platform:
+    #     for i in db.search(Q.platform.test(xpf, xplatform)):
+    #         print i['title'].encode('utf-8')
+
+    # if '|' in platform:
+    #     for i in db.search(Q.platform.test(pf, platform)):
+    #         print i['title'].encode('utf-8')
+    pfset = set()
+    for i in platform.split('|'):
+        [pfset.add(j['title']) for j in db.search(Q.platform.test(xpf, i))]
+        # for j in x:
+        #     platform_set.add(j['url'])
+    print pfset
+    return
 
 
 @cal.command()
@@ -106,5 +135,4 @@ Q = Query()
 if __name__ == '__main__':
     # calinit()
     # calupdate()
-    for i in calshow('platform', 'NS'):
-        print i['title'].encode('utf-8')
+    calsearch()
