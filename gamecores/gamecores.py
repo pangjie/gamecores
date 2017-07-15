@@ -4,12 +4,14 @@
 
 import os
 
+from difflib import SequenceMatcher
 from time import time, sleep
-import requests
+import re
 
 from shortuuid import uuid
 from tinydb import *
 import click
+import requests
 
 import cal_scrape_wiki as g
 
@@ -19,7 +21,7 @@ def cal():
     return
 
 
-@cal.command()
+# @cal.command()
 def calinit():
     """Clean and initialize the database file."""
     print("Start to init...")
@@ -36,6 +38,7 @@ def calinit():
         'url': '',
     }
     for i in xrange(2008, 2019):
+    # for i in xrange(2008, 2012):
         src['url'] = 'https://en.wikipedia.org/wiki/' +\
                      str(i) + '_in_video_gaming'
         src['year'] = i
@@ -45,7 +48,7 @@ def calinit():
     return
 
 
-@cal.command()
+# @cal.command()
 def calupdate():
     """Update data of actived years """
     print("Star to update database...")
@@ -81,43 +84,36 @@ def calupdate():
 
 @cal.command()
 @click.option('--title', default='')
-@click.option('--platform', default='NS&PS4|NS')
+@click.option('--platform', default='')
 def calsearch(title, platform):
     """Show information in the database"""
-    print("Trying to show something")
-    print title
-    print platform.split('|')
+    title_set = set()
+    pf_set = set()
+
+    # Search Title
+    def tt(val, tt):
+        val = val.lower()
+        tt = tt.lower()
+        similarity = SequenceMatcher(None, val, tt).ratio() > 0.6
+        superset = set(re.split(r': | ', val)).issuperset(tt.split(' '))
+        subset = set(re.split(r': | ', val)).issubset(tt.split(' '))
+        if similarity or superset or subset:
+            return True
+        return False
+    [title_set.add(i['title']) for i in db.search(Q.title.test(tt, title))]
 
     # Search Platform
-    # def pf(val, pf):
-    #     # print list(pf)
-    #     return bool(set(val).intersection(pf.split('|')))
-
-    # if platform != '':
-    #     for i in db.search(Q.platform.test(pf, platform)):
-    #         print i['title'].encode('utf-8')
-
-    def xpf(val, pf):
+    def pf(val, pf):
         # print list(pf)
         return bool(set(val).issuperset(pf.split('&')))
-
-    # if xplatform != '':
-    #     for i in db.search(Q.platform.test(xpf, xplatform)):
-    #         print i['title'].encode('utf-8')
-
-    # if '&' in platform:
-    #     for i in db.search(Q.platform.test(xpf, xplatform)):
-    #         print i['title'].encode('utf-8')
-
-    # if '|' in platform:
-    #     for i in db.search(Q.platform.test(pf, platform)):
-    #         print i['title'].encode('utf-8')
-    pfset = set()
     for i in platform.split('|'):
-        [pfset.add(j['title']) for j in db.search(Q.platform.test(xpf, i))]
-        # for j in x:
-        #     platform_set.add(j['url'])
-    print pfset
+        [pf_set.add(j['title']) for j in db.search(Q.platform.test(pf, i))]
+    # final_set = title_set & pf_set
+    for i in xrange(2008, 2019):
+        print i
+        x = len(db.search(where('year') == i))
+        if x < 3:
+            print db.search(where('year') == i)
     return
 
 
@@ -135,4 +131,6 @@ Q = Query()
 if __name__ == '__main__':
     # calinit()
     # calupdate()
-    calsearch()
+    # calsearch()
+    for i in range(2008,2019):
+        print("%8s%s" % ('Y', i))

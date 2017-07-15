@@ -15,7 +15,6 @@ def scrape_sch(url):
     Find all schedule tables whoes html lable class containing wikitable.
     """
     desc_list = []
-    print col_n['2008']
     year = int(re.findall(r'20\d\d', url)[0])
     page = requests.get(url).content
     soup = bs4.BeautifulSoup(page, "html.parser")
@@ -26,18 +25,20 @@ def scrape_sch(url):
         elif 2008 <= year <= 2014:
             col = [x.get_text() for x in tb.find('tr').find_all('td')]
         if col[2:3] in [[u'Title']]:
-            desc_list += sch(tb, len(col))
+            desc_list += sch(tb, col)
         elif col[2:3] in [[u'Platforms'], [u'Platform(s)']]:
-            desc_list += unsch(tb, len(col))
+            desc_list += unsch(tb)
     [x.update({'year': year}) for x in desc_list]
     [x.update({'rls_ts': gen_rls_ts(x)}) for x in desc_list]
     return desc_list
 
 
-def sch(table, col_n):
+def sch(table, col):
     """
     Find game infomation from tables including exact release date.
     """
+    stack = []
+    col_n = len(col)
     re_pf = r"""PC\W|Win\W|Mac\W|Lin\W|
                 |PPC$|Win$|Mac$|Lin$|Linux|
                 |iOS|Android|Droid|WP\W|WP$|Apple Watch|
@@ -53,21 +54,26 @@ def sch(table, col_n):
               'october', 'november', 'december']
     tags = [x for x in table.find_all('td')]
     items = [x.get_text().replace('\n', '') for x in tags]
+    # items = [x.get_text().replace('\n', '') for x in table.find_all('td')]
 
-    stack = []
-
-    for i in items:
+    for idx, i in enumerate(items):
         if i.lower() in months:
             del stack[:]
             stack.append(i)
-        elif re.match(r'^\d+$', i) is not None:
-            # print stack
+        elif re.match(r'^\d+$|TBA', i) is not None:
             del stack[1:]
             stack.append(i)
         else:
             stack.append(i)
-        if len(stack) == col_n:
-            # print stack
+            if len(stack) == 3:
+                try:
+                    sub_url = tags[idx].find('a').get('href')
+                    stack_url = 'https://en.wikipedia.org' + sub_url
+                except AttributeError:
+                    stack_url = ''
+                stack.append(stack_url)
+        if len(stack) == col_n + 1:
+            print stack
             del stack[2:]
 
     for idx, val in enumerate(items):
@@ -91,7 +97,7 @@ def sch(table, col_n):
     return desc_list
 
 
-def unsch(table, col_n):
+def unsch(table):
     """
     Find game infomation from tables without exact release date.
     """
@@ -272,24 +278,24 @@ if __name__ == '__main__':
     # year = raw_input('Please input a year between 2007-2018:')
     # url = 'https://en.wikipedia.org/wiki/' + year + '_in_video_gaming'
     # x = scrape_sch(url)
-    x = scrape_sch('https://en.wikipedia.org/wiki/2008_in_video_gaming')
-    sleep(3)
-    x = scrape_sch('https://en.wikipedia.org/wiki/2009_in_video_gaming')
-    sleep(3)
-    x = scrape_sch('https://en.wikipedia.org/wiki/2010_in_video_gaming')
-    sleep(3)
-    x = scrape_sch('https://en.wikipedia.org/wiki/2011_in_video_gaming')
-    sleep(3)
-    x = scrape_sch('https://en.wikipedia.org/wiki/2012_in_video_gaming')
-    sleep(3)
-    x = scrape_sch('https://en.wikipedia.org/wiki/2013_in_video_gaming')
-    sleep(3)
-    x = scrape_sch('https://en.wikipedia.org/wiki/2014_in_video_gaming')
-    sleep(3)
-    x = scrape_sch('https://en.wikipedia.org/wiki/2015_in_video_gaming')
-    sleep(3)
-    x = scrape_sch('https://en.wikipedia.org/wiki/2016_in_video_gaming')
-    sleep(3)
+    # x = scrape_sch('https://en.wikipedia.org/wiki/2008_in_video_gaming')
+    # sleep(3)
+    # x = scrape_sch('https://en.wikipedia.org/wiki/2009_in_video_gaming')
+    # sleep(3)
+    # x = scrape_sch('https://en.wikipedia.org/wiki/2010_in_video_gaming')
+    # sleep(3)
+    # x = scrape_sch('https://en.wikipedia.org/wiki/2011_in_video_gaming')
+    # sleep(3)
+    # x = scrape_sch('https://en.wikipedia.org/wiki/2012_in_video_gaming')
+    # sleep(3)
+    # x = scrape_sch('https://en.wikipedia.org/wiki/2013_in_video_gaming')
+    # sleep(3)
+    # x = scrape_sch('https://en.wikipedia.org/wiki/2014_in_video_gaming')
+    # sleep(3)
+    # x = scrape_sch('https://en.wikipedia.org/wiki/2015_in_video_gaming')
+    # sleep(3)
+    # x = scrape_sch('https://en.wikipedia.org/wiki/2016_in_video_gaming')
+    # sleep(3)
     x = scrape_sch('https://en.wikipedia.org/wiki/2017_in_video_gaming')
     sleep(3)
     # for i in x:
