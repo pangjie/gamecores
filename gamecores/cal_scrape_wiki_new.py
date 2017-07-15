@@ -19,10 +19,12 @@ def scrape_sch(url):
     page = requests.get(url).content
     soup = bs4.BeautifulSoup(page, "html.parser")
     tbls = soup.find_all('table', class_='wikitable')
+    year_with_th = [2010, 2015, 2016, 2017, 2018]
+    year_with_tr = [2008, 2009, 2011, 2012, 2013, 2014]
     for tb in tbls:
-        if 2015 <= year <= 2018:
+        if year in year_with_th:
             col = [x.get_text() for x in tb.find_all('th')]
-        elif 2008 <= year <= 2014:
+        elif year in year_with_tr:
             col = [x.get_text() for x in tb.find('tr').find_all('td')]
         if col[2:3] in [[u'Title']]:
             desc_list += sch(tb, col)
@@ -54,27 +56,24 @@ def sch(table, col):
               'october', 'november', 'december']
     tags = [x for x in table.find_all('td')]
     items = [x.get_text().replace('\n', '') for x in tags]
-    # items = [x.get_text().replace('\n', '') for x in table.find_all('td')]
-
     for idx, i in enumerate(items):
         if i.lower() in months:
             del stack[:]
-            stack.append(i)
         elif re.match(r'^\d+$|TBA', i) is not None:
             del stack[1:]
-            stack.append(i)
-        else:
-            stack.append(i)
-            if len(stack) == 3:
-                try:
-                    sub_url = tags[idx].find('a').get('href')
-                    stack_url = 'https://en.wikipedia.org' + sub_url
-                except AttributeError:
-                    stack_url = ''
-                stack.append(stack_url)
-        if len(stack) == col_n + 1:
+        stack.append(i)
+        try:
+            stack[col_n - 1]
+            sub_url = tags[idx - col_n + 3].find('a').get('href')
+            stack.append('https://en.wikipedia.org' + sub_url)
             print stack
             del stack[2:]
+        except AttributeError:
+            stack.append('')
+            print stack
+            del stack[2:]
+        except IndexError:
+            pass
 
     for idx, val in enumerate(items):
         if val.lower() in months:

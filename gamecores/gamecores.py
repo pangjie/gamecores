@@ -132,5 +132,6 @@ if __name__ == '__main__':
     # calinit()
     # calupdate()
     # calsearch()
-    for i in range(2008,2019):
-        print("%8s%s" % ('Y', i))
+    x = [1,2,3]
+    x[4]
+    print x
