@@ -38,7 +38,6 @@ def calinit():
         'url': '',
     }
     for i in xrange(2008, 2019):
-    # for i in xrange(2008, 2012):
         src['url'] = 'https://en.wikipedia.org/wiki/' +\
                      str(i) + '_in_video_gaming'
         src['year'] = i
@@ -114,6 +113,8 @@ def calsearch(title, platform):
         x = len(db.search(where('year') == i))
         if x < 3:
             print db.search(where('year') == i)
+        else:
+            print x
     return
 
 
@@ -129,9 +130,6 @@ db = TinyDB(os.path.dirname(__file__) + '/cal_db.json')
 Q = Query()
 
 if __name__ == '__main__':
-    # calinit()
-    # calupdate()
-    # calsearch()
-    x = [1,2,3]
-    x[4]
-    print x
+    calinit()
+    calupdate()
+    calsearch()

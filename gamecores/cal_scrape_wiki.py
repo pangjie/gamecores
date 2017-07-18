@@ -15,7 +15,6 @@ def scrape_sch(url):
     Find all schedule tables whoes html lable class containing wikitable.
     """
     desc_list = []
-    print col_n['2008']
     year = int(re.findall(r'20\d\d', url)[0])
     page = requests.get(url).content
     soup = bs4.BeautifulSoup(page, "html.parser")
