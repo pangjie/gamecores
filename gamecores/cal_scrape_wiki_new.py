@@ -30,8 +30,12 @@ def scrape_sch(url):
             desc_list += sch(tb, col)
         elif col[2:3] in [[u'Platforms'], [u'Platform(s)']]:
             desc_list += unsch(tb)
-    [x.update({'year': year}) for x in desc_list]
-    [x.update({'rls_ts': gen_rls_ts(x)}) for x in desc_list]
+    [desc_list.remove(x) for x in desc_list if 'Month' in x]
+    # [data_washer(x) for x in desc_list]
+    [x.insert(0, str(year)) for x in desc_list]
+    [x.insert(0, gen_rls_ts(x)) for x in desc_list]
+    for i in desc_list:
+        print i
     return desc_list
 
 
@@ -40,6 +44,7 @@ def sch(table, col):
     Find game infomation from tables including exact release date.
     """
     stack = []
+    stack_list = []
     col_n = len(col)
     re_pf = r"""PC\W|Win\W|Mac\W|Lin\W|
                 |PPC$|Win$|Mac$|Lin$|Linux|
@@ -66,11 +71,11 @@ def sch(table, col):
             stack[col_n - 1]
             sub_url = tags[idx - col_n + 3].find('a').get('href')
             stack.append('https://en.wikipedia.org' + sub_url)
-            print stack
+            stack_list.append(list(stack))
             del stack[2:]
         except AttributeError:
             stack.append('')
-            print stack
+            stack_list.append(list(stack))
             del stack[2:]
         except IndexError:
             pass
@@ -93,14 +98,15 @@ def sch(table, col):
                 desc['url'] = 'https://en.wikipedia.org' + sub_url
             except AttributeError:
                 desc['url'] = ''
-    return desc_list
+
+    return stack_list
 
 
 def unsch(table):
     """
     Find game infomation from tables without exact release date.
     """
-    desc_list = []
+    stack_list = []
     keys = ['title', 'release', 'platform', 'genre', 'url']
     tags = [x for x in table.find_all('td')]
     items = [x.get_text().replace('\n', '') for x in tags]
@@ -111,15 +117,13 @@ def unsch(table):
             value.append('https://en.wikipedia.org' + sub_url)
         except AttributeError:
             value.append('')
-        desc_list.append(dict(zip(keys, value)))
-        print value
-    return desc_list
+        stack_list.append(value)
+    return stack_list
 
 
 def gen_rls_ts(desc):
-    time_str = desc['release'] + str(desc['year'])
     try:
-        return mktime(strptime(time_str, "%B %d%Y"))
+        return mktime(strptime(desc[0] + desc[1] + desc[2], "%Y%B%d"))
     except ValueError:
         return 0
 

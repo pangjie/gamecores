@@ -130,6 +130,9 @@ db = TinyDB(os.path.dirname(__file__) + '/cal_db.json')
 Q = Query()
 
 if __name__ == '__main__':
-    calinit()
-    calupdate()
-    calsearch()
+    # calinit()
+    # calupdate()
+    # calsearch()
+    x = [1,2,3,4,5,6,7,8,9]
+    [ i+1 for i in x]
+    print x
