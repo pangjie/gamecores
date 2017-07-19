@@ -133,6 +133,7 @@ if __name__ == '__main__':
     # calinit()
     # calupdate()
     # calsearch()
-    x = [1,2,3,4,5,6,7,8,9]
-    [ i+1 for i in x]
+    x = [[1],[2],[3],[4],[5],[6],[7],[8],[9]]
+    [i.append(1) for i in x]
+    x[0] = [n+1 for n in x[0:-1]]
     print x

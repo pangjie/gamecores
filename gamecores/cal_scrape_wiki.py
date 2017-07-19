@@ -208,7 +208,7 @@ def fix_value(value):
     value = re.sub(r'\[\w*\d*\]|\s*\(\s*\w*\s*\)', '', value)
     value = re.sub(r'(\n)+', '\n', value).strip('\n')
     value = re.sub('\\xa0', ' ', value)
-    return value.encode('utf-8')
+    return value
 
 
 def fix_title(value):
