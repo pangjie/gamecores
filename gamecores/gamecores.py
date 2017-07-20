@@ -13,7 +13,7 @@ from tinydb import *
 import click
 import requests
 
-import cal_scrape_wiki as g
+import cal_scrape_wiki_new as g
 
 
 @click.group()
@@ -133,7 +133,8 @@ if __name__ == '__main__':
     # calinit()
     # calupdate()
     # calsearch()
-    x = [[1],[2],[3],[4],[5],[6],[7],[8],[9]]
-    [i.append(1) for i in x]
-    x[0] = [n+1 for n in x[0:-1]]
-    print x
+    x = {}
+    a = []
+    # for i in xrange(2008, 2019):
+    #     url = 'https://en.wikipedia.org/wiki/' + str(i) + '_in_video_gaming'
+    #     a += g.scrape_sch(url)

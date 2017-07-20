@@ -36,11 +36,12 @@ def scrape_sch(url):
     [tba_data_washer(x, year) for x in desc_list_tba]
     for i in desc_list + desc_list_tba:
         try:
-            print i[5]
+            # print i[5]
+            print i[4].encode('utf-8')
         except IndexError:
             pass
-        # print i[4].encode('utf-8')
-    return desc_list + desc_list_tba
+    # return desc_list + desc_list_tba
+    return desc_list
 
 
 def data_washer(x, year):
@@ -143,31 +144,31 @@ def fix_title(value):
 
 
 if __name__ == '__main__':
-    print 'Run scrape_sch as Main'
+    # print 'Run scrape_sch as Main'
     # year = raw_input('Please input a year between 2007-2018:')
     # url = 'https://en.wikipedia.org/wiki/' + year + '_in_video_gaming'
     # x = scrape_sch(url)
-    # x = scrape_sch('https://en.wikipedia.org/wiki/2008_in_video_gaming')
-    # sleep(3)
-    # x = scrape_sch('https://en.wikipedia.org/wiki/2009_in_video_gaming')
-    # sleep(3)
-    # x = scrape_sch('https://en.wikipedia.org/wiki/2010_in_video_gaming')
-    # sleep(3)
-    # x = scrape_sch('https://en.wikipedia.org/wiki/2011_in_video_gaming')
-    # sleep(3)
-    # x = scrape_sch('https://en.wikipedia.org/wiki/2012_in_video_gaming')
-    # sleep(3)
-    # x = scrape_sch('https://en.wikipedia.org/wiki/2013_in_video_gaming')
-    # sleep(3)
-    # x = scrape_sch('https://en.wikipedia.org/wiki/2014_in_video_gaming')
-    # sleep(3)
-    # x = scrape_sch('https://en.wikipedia.org/wiki/2015_in_video_gaming')
-    # sleep(3)
-    # x = scrape_sch('https://en.wikipedia.org/wiki/2016_in_video_gaming')
-    # sleep(3)
+    x = scrape_sch('https://en.wikipedia.org/wiki/2008_in_video_gaming')
+    sleep(3)
+    x = scrape_sch('https://en.wikipedia.org/wiki/2009_in_video_gaming')
+    sleep(3)
+    x = scrape_sch('https://en.wikipedia.org/wiki/2010_in_video_gaming')
+    sleep(3)
+    x = scrape_sch('https://en.wikipedia.org/wiki/2011_in_video_gaming')
+    sleep(3)
+    x = scrape_sch('https://en.wikipedia.org/wiki/2012_in_video_gaming')
+    sleep(3)
+    x = scrape_sch('https://en.wikipedia.org/wiki/2013_in_video_gaming')
+    sleep(3)
+    x = scrape_sch('https://en.wikipedia.org/wiki/2014_in_video_gaming')
+    sleep(3)
+    x = scrape_sch('https://en.wikipedia.org/wiki/2015_in_video_gaming')
+    sleep(3)
+    x = scrape_sch('https://en.wikipedia.org/wiki/2016_in_video_gaming')
+    sleep(3)
     x = scrape_sch('https://en.wikipedia.org/wiki/2017_in_video_gaming')
-    # sleep(3)
-    # x = scrape_sch('https://en.wikipedia.org/wiki/2018_in_video_gaming')
+    sleep(3)
+    x = scrape_sch('https://en.wikipedia.org/wiki/2018_in_video_gaming')
     # sleep(3)
     # for i in x:
     #     print("%8s: %s" % ('title', i['title']))
