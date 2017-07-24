@@ -47,11 +47,16 @@ def calinit():
     return
 
 
-# @cal.command()
-def calupdate():
+@cal.command()
+@click.option('--deep', default=False, is_flag=True)
+def calupdate(deep):
     """Update data of actived years """
     print("Star to update database...")
     for i in db.search(Q.type == 'cal_src'):
+        # Deep update or only update data after 2017
+        if not deep and i['year'] < 2017:
+            print 'Jump to next year'
+            continue
         # In case user updates too often or a source is not active.
         if time() - i['update_ts'] < 30 or not i['active']:
             print 'Update too often'
