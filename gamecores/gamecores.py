@@ -13,7 +13,7 @@ from tinydb import *
 import click
 import requests
 
-import cal_scrape_wiki_new as g
+import cal_scrape_wiki as g
 
 
 @click.group()
@@ -121,7 +121,11 @@ def calsearch(title, platform, year):
         return bool(set(val).issuperset(pf.split('&')))
     for i in platform.split('|'):
         [pf_set.add(j['title']) for j in db.search(Q.platform.test(pf, i))]
-    # final_set = title_set & pf_set
+
+    # Search Year
+    def year(val, y):
+        return True if val == y else False
+
     for i in xrange(2008, 2019):
         print i
         x = len(db.search(where('year') == str(i)))
@@ -129,10 +133,6 @@ def calsearch(title, platform, year):
             print db.search(where('year') == str(i))
         else:
             print x
-
-    # Search Year
-    def year(val, y):
-        return True if val == y else False
     return
 
 

@@ -50,9 +50,15 @@ Developing...
     1. Create a function called `update_cal_db` for updating the db with new data on wiki sources.  
 4. For making Gamecores more delayering, delete `cal_core.py` and absorbe `cal_data_manager.py` to `gamecores.py`
 5. Modify `scrape_sch(url)` and make the data of game released before 2017 static and `update_cal_db` only update game released after Jan. 1st 2017.
-6. Rewrite `cal_scrape_wiki.py`, and set `year_with_th`, `year_with_tr` lists for adopting different scrape strategy.
+6. Rewrite `cal_scrape_wiki.py`, and set `year_with_th`, `year_with_tr` lists for adopting different scrape strategy. Seprate scheduled data and TBA data with `dict` and label them with keys: `scheduled` and `tba`.
 
 ###  Pre-Publish `gamecores` In Pypi For Test
+
+1. Create `@click.group()` named `cal()`.
+    1. Create `calinit()` for initializing the database and insert wiki source data.
+    2. Create `calupdate()` for scraping data from wiki source showing on the database. The`calupdate()` has a option named `--deep` for updating previous data.
+    3. Create `calsearch()` for searching data with `title`, `platform`, `date`.
+
 
 ###  Game/Engine/Company WIKI Search
 

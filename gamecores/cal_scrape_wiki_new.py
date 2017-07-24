@@ -36,17 +36,6 @@ def scrape_sch(url):
     [desc_list.remove(x) for x in desc_list if 'Month' in x]
     scheduled_list = [data_washer(x, year) for x in desc_list]
     tba_list = [tba_data_washer(x, year) for x in desc_list_tba]
-    for i in scheduled_list + tba_list:
-        try:
-            # print i[5]
-            # print i[4].encode('utf-8')
-            # print i
-            pass
-        except IndexError:
-            pass
-    # return desc_list + desc_list_tba
-    # return desc_list
-    print year
     return {'scheduled': scheduled_list, 'tba': tba_list}
 
 
