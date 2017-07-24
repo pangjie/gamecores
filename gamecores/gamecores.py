@@ -64,14 +64,22 @@ def calupdate():
             print 'Page is not changed by last update.'
             continue
         # Get the newest schedual from source urls.
-        sch_list = g.scrape_sch(i['url'])
+        schedualed_tba = g.scrape_sch(i['url'])
+        sch_list = schedualed_tba['scheduled']
+        tba_list = schedualed_tba['tba']
+        print len(sch_list)
+        print len(tba_list)
         # Remove expired data from db.
-        db.remove((Q.type == 'sch') & (Q.src_id == i['id']))
+        db.remove((Q.type == 'sched') & (Q.src_id == i['id']))
+        db.remove((Q.type == 'tba') & (Q.src_id == i['id']))
         # Add data features to new data.
-        data_patch = {'type': 'sch', 'src_id': i['id']}
-        [j.update(data_patch) for j in sch_list]
+        schedualed_data_patch = {'type': 'sched', 'src_id': i['id']}
+        tba_data_patch = {'type': 'tba', 'src_id': i['id']}
+        [j.update(schedualed_data_patch) for j in sch_list]
+        [j.update(tba_data_patch) for j in tba_list]
         # Insert new data to db.
         db.insert_multiple(sch_list)
+        db.insert_multiple(tba_list)
         # Update source data to db.
         i['update_ts'] = time()
         i['modified_ts'] = head.headers['Last-Modified']
@@ -84,7 +92,8 @@ def calupdate():
 @cal.command()
 @click.option('--title', default='')
 @click.option('--platform', default='')
-def calsearch(title, platform):
+@click.option('--year', default='')
+def calsearch(title, platform, year):
     """Show information in the database"""
     title_set = set()
     pf_set = set()
@@ -110,11 +119,15 @@ def calsearch(title, platform):
     # final_set = title_set & pf_set
     for i in xrange(2008, 2019):
         print i
-        x = len(db.search(where('year') == i))
+        x = len(db.search(where('year') == str(i)))
         if x < 3:
-            print db.search(where('year') == i)
+            print db.search(where('year') == str(i))
         else:
             print x
+
+    # Search Year
+    def year(val, y):
+        return True if val == y else False
     return
 
 
@@ -132,9 +145,4 @@ Q = Query()
 if __name__ == '__main__':
     # calinit()
     # calupdate()
-    # calsearch()
-    x = {}
-    a = []
-    # for i in xrange(2008, 2019):
-    #     url = 'https://en.wikipedia.org/wiki/' + str(i) + '_in_video_gaming'
-    #     a += g.scrape_sch(url)
+    calsearch()

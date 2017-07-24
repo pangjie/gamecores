@@ -16,6 +16,8 @@ def scrape_sch(url):
     """
     desc_list = []
     desc_list_tba = []
+    scheduled_list = []
+    tba_list = []
     year = re.findall(r'20\d\d', url)[0]
     page = requests.get(url).content
     soup = bs4.BeautifulSoup(page, "html.parser")
@@ -32,21 +34,26 @@ def scrape_sch(url):
         elif col[2:3] in [[u'Platforms'], [u'Platform(s)']]:
             desc_list_tba += unsch(tb)
     [desc_list.remove(x) for x in desc_list if 'Month' in x]
-    [data_washer(x, year) for x in desc_list]
-    [tba_data_washer(x, year) for x in desc_list_tba]
-    for i in desc_list + desc_list_tba:
+    scheduled_list = [data_washer(x, year) for x in desc_list]
+    tba_list = [tba_data_washer(x, year) for x in desc_list_tba]
+    for i in scheduled_list + tba_list:
         try:
             # print i[5]
-            print i[4].encode('utf-8')
+            # print i[4].encode('utf-8')
+            # print i
+            pass
         except IndexError:
             pass
     # return desc_list + desc_list_tba
-    return desc_list
+    # return desc_list
+    print year
+    return {'scheduled': scheduled_list, 'tba': tba_list}
 
 
 def data_washer(x, year):
+    key = ['rls_ts', 'year', 'month', 'day', 'title', 'platform', 'url']
     ref = re.compile(r'^(\[\d+\])+$|\[\w*\s\w*\]')
-    if year in ['2017']:
+    if year in ['2017', '2018']:
         [x.remove(x[4]) for i in x if re.match(ref, x[4]) is not None]
     elif year in ['2015', '2016']:
         x.remove(x[4])
@@ -56,11 +63,14 @@ def data_washer(x, year):
     x.insert(0, year)
     x.insert(0, gen_rls_ts(x))
     x[4] = fix_title(x[4])
-    return x
+    return dict(zip(key, x))
 
 
 def tba_data_washer(x, year):
-    return x
+    key = ['year', 'title', 'release', 'platform', 'genre', 'url']
+    x[0] = fix_title(x[0])
+    x.insert(0, year)
+    return dict(zip(key, x))
 
 
 def sch(table, col):
@@ -148,24 +158,24 @@ if __name__ == '__main__':
     # year = raw_input('Please input a year between 2007-2018:')
     # url = 'https://en.wikipedia.org/wiki/' + year + '_in_video_gaming'
     # x = scrape_sch(url)
-    x = scrape_sch('https://en.wikipedia.org/wiki/2008_in_video_gaming')
-    sleep(3)
-    x = scrape_sch('https://en.wikipedia.org/wiki/2009_in_video_gaming')
-    sleep(3)
-    x = scrape_sch('https://en.wikipedia.org/wiki/2010_in_video_gaming')
-    sleep(3)
-    x = scrape_sch('https://en.wikipedia.org/wiki/2011_in_video_gaming')
-    sleep(3)
-    x = scrape_sch('https://en.wikipedia.org/wiki/2012_in_video_gaming')
-    sleep(3)
-    x = scrape_sch('https://en.wikipedia.org/wiki/2013_in_video_gaming')
-    sleep(3)
-    x = scrape_sch('https://en.wikipedia.org/wiki/2014_in_video_gaming')
-    sleep(3)
-    x = scrape_sch('https://en.wikipedia.org/wiki/2015_in_video_gaming')
-    sleep(3)
-    x = scrape_sch('https://en.wikipedia.org/wiki/2016_in_video_gaming')
-    sleep(3)
+    # x = scrape_sch('https://en.wikipedia.org/wiki/2008_in_video_gaming')
+    # sleep(3)
+    # x = scrape_sch('https://en.wikipedia.org/wiki/2009_in_video_gaming')
+    # sleep(3)
+    # x = scrape_sch('https://en.wikipedia.org/wiki/2010_in_video_gaming')
+    # sleep(3)
+    # x = scrape_sch('https://en.wikipedia.org/wiki/2011_in_video_gaming')
+    # sleep(3)
+    # x = scrape_sch('https://en.wikipedia.org/wiki/2012_in_video_gaming')
+    # sleep(3)
+    # x = scrape_sch('https://en.wikipedia.org/wiki/2013_in_video_gaming')
+    # sleep(3)
+    # x = scrape_sch('https://en.wikipedia.org/wiki/2014_in_video_gaming')
+    # sleep(3)
+    # x = scrape_sch('https://en.wikipedia.org/wiki/2015_in_video_gaming')
+    # sleep(3)
+    # x = scrape_sch('https://en.wikipedia.org/wiki/2016_in_video_gaming')
+    # sleep(3)
     x = scrape_sch('https://en.wikipedia.org/wiki/2017_in_video_gaming')
     sleep(3)
     x = scrape_sch('https://en.wikipedia.org/wiki/2018_in_video_gaming')
