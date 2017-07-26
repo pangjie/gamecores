@@ -21,7 +21,7 @@ def cal():
     return
 
 
-# @cal.command()
+@cal.command()
 def calinit():
     """Clean and initialize the database file."""
     print("Start to init...")
@@ -97,8 +97,7 @@ def calupdate(deep):
 @cal.command()
 @click.option('--title', default='')
 @click.option('--platform', default='')
-@click.option('--year', default='')
-def calsearch(title, platform, year):
+def calsearch(title, platform):
     """Show information in the database"""
     title_set = set()
     pf_set = set()
@@ -121,10 +120,6 @@ def calsearch(title, platform, year):
         return bool(set(val).issuperset(pf.split('&')))
     for i in platform.split('|'):
         [pf_set.add(j['title']) for j in db.search(Q.platform.test(pf, i))]
-
-    # Search Year
-    def year(val, y):
-        return True if val == y else False
 
     for i in xrange(2008, 2019):
         print i
