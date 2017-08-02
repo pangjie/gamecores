@@ -98,12 +98,14 @@ def calupdate(deep):
 
 
 @cal.command()
-@click.option('--title', default='---')
+@click.option('--title', '-t', default='---')
 @click.option('--platform', '-p', default='---')
-@click.option('--year', '-y', default='---')
-@click.option('--timesection', '-t', nargs=2, default=(0, 0), type=int)
-@click.option('--alldata', default=False, is_flag=True)
-def calsearch(title, platform, year, timesection, alldata):
+@click.option('--year', '-y', default='2016')
+@click.option('--timesection', '-ts', nargs=2, default=(0, 0), type=int)
+@click.option('--alldata', '-a', default=False, is_flag=True)
+@click.option('--export', '-e', default=False, is_flag=True)
+@click.option('--noprint', default=False, is_flag=True)
+def calshow(title, platform, year, timesection, alldata, export, noprint):
     """Show information in the database"""
     title_set = set()
     pf_set = set()
@@ -113,12 +115,12 @@ def calsearch(title, platform, year, timesection, alldata):
     search_set_list = [title_set, pf_set, year_set, time_set]
 
     # Return All Data
-    if not alldata:
+    if alldata:
         alldata_list = []
         alldata_list += db.search(Q.type == 'sched')
         alldata_list += db.search(Q.type == 'tba')
-        for i in alldata_list:
-            print i
+        if not noprint:
+            calprint(alldata_list)
         return alldata_list
 
     # Search Title
@@ -129,16 +131,16 @@ def calsearch(title, platform, year, timesection, alldata):
         superset = set(re.split(r': | ', val)).issuperset(tt.split(' '))
         subset = set(re.split(r': | ', val)).issubset(tt.split(' '))
         return similarity or superset or subset
-    [title_set.add(i['title']) for i in db.search(Q.title.test(tt, title))]
+    [title_set.add(i['id']) for i in db.search(Q.title.test(tt, title))]
 
     # Search Platform
     def pf(val, pf):
         return bool(set(val).issuperset(pf.split('&')))
     for i in platform.split('|'):
-        [pf_set.add(j['title']) for j in db.search(Q.platform.test(pf, i))]
+        [pf_set.add(j['id']) for j in db.search(Q.platform.test(pf, i))]
 
     # Search Year
-    [year_set.add(i['title']) for i in db.search(Q.year == year)]
+    [year_set.add(i['id']) for i in db.search(Q.year == year)]
 
     # Search Time Zone
     try:
@@ -151,26 +153,24 @@ def calsearch(title, platform, year, timesection, alldata):
     def tz(val, timesection):
         return True if tz_start <= val <= tz_stop else False
     timesection_result = db.search(Q.rls_ts.test(tz, timesection))
-    [time_set.add(i['title']) for i in timesection_result]
+    [time_set.add(i['id']) for i in timesection_result]
 
     # Final Set
     final_set = title_set | pf_set | year_set | time_set
     for i in search_set_list:
         if i != set():
             final_set = final_set & i
-    print final_set
-    for i in final_set:
-        xx = db.search(Q.title == i)
-        for xxx in xx:
-            print xxx
-    return final_set
+    print list(final_set)
+    print type(list(final_set))
 
-
-@cal.command()
-def calexport():
-    """Export calendar data to a ics file."""
-    print("tring to generate an ics file")
-    return
+    def id_pool(val):
+        return True if val in list(final_set) else False
+    final_list = db.search(Q.id.test(id_pool))
+    if not noprint:
+        calprint(final_list)
+    print len(final_list)
+    print len(final_set)
+    return final_list
 
 
 @cal.command()
@@ -185,6 +185,21 @@ def calstat():
     return
 
 
+def calprint(final_list):
+    """Print the result to screen."""
+    for i in final_list:
+        print i
+    return
+
+
+def calexport(final_list):
+    with open('gamecores.ics', 'w') as f:
+        print f.mode
+        f.write('1) first line\n')
+        f.write('2) second line\n')
+    return
+
+
 gc = click.CommandCollection(sources=[cal])
 db = TinyDB(os.path.dirname(__file__) + '/cal_db.json')
 Q = Query()
@@ -192,5 +207,6 @@ Q = Query()
 if __name__ == '__main__':
     # calinit()
     # calupdate()
-    calsearch()
+    # calshow()
     # calstat()
+    calexport(0)
