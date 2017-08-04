@@ -6,6 +6,7 @@ import os
 
 from difflib import SequenceMatcher
 from time import time, sleep, mktime, strptime
+from datetime import datetime
 import re
 
 from shortuuid import uuid
@@ -19,7 +20,6 @@ import cal_scrape_wiki as g
 @click.group()
 def cal():
     return
-
 
 @cal.command()
 def calinit():
@@ -45,7 +45,6 @@ def calinit():
         db.insert(src)
     print("Init Fineshed!")
     return
-
 
 @cal.command()
 @click.option('--deep', default=False, is_flag=True)
@@ -96,12 +95,11 @@ def calupdate(deep):
     print("Update Finished!")
     return
 
-
 @cal.command()
 @click.option('--title', '-t', default='---')
 @click.option('--platform', '-p', default='---')
-@click.option('--year', '-y', default='2016')
-@click.option('--timesection', '-ts', nargs=2, default=(0, 0), type=int)
+@click.option('--year', '-y', default='---')
+@click.option('--timesection', '-ts', nargs=2, default=(20170707, 20170909), type=int)
 @click.option('--alldata', '-a', default=False, is_flag=True)
 @click.option('--export', '-e', default=False, is_flag=True)
 @click.option('--noprint', default=False, is_flag=True)
@@ -112,16 +110,8 @@ def calshow(title, platform, year, timesection, alldata, export, noprint):
     year_set = set()
     time_set = set()
     final_set = set()
+    final_list = []
     search_set_list = [title_set, pf_set, year_set, time_set]
-
-    # Return All Data
-    if alldata:
-        alldata_list = []
-        alldata_list += db.search(Q.type == 'sched')
-        alldata_list += db.search(Q.type == 'tba')
-        if not noprint:
-            calprint(alldata_list)
-        return alldata_list
 
     # Search Title
     def tt(val, tt):
@@ -131,47 +121,57 @@ def calshow(title, platform, year, timesection, alldata, export, noprint):
         superset = set(re.split(r': | ', val)).issuperset(tt.split(' '))
         subset = set(re.split(r': | ', val)).issubset(tt.split(' '))
         return similarity or superset or subset
-    [title_set.add(i['id']) for i in db.search(Q.title.test(tt, title))]
+    if title != '---':
+        title_pool = db.search(Q.title.test(tt, title))
+        [title_set.add(i['id']) for i in title_pool]
 
     # Search Platform
     def pf(val, pf):
+        val = val.split(', ')
         return bool(set(val).issuperset(pf.split('&')))
-    for i in platform.split('|'):
-        [pf_set.add(j['id']) for j in db.search(Q.platform.test(pf, i))]
+    if platform != '---':
+        for i in platform.split('|'):
+            platform_pool = db.search(Q.platform.test(pf, i))
+            [pf_set.add(j['id']) for j in platform_pool]
 
     # Search Year
-    [year_set.add(i['id']) for i in db.search(Q.year == year)]
+    if year != '---':
+        year_pool = db.search(Q.year == year)
+        [year_set.add(i['id']) for i in year_pool]
 
     # Search Time Zone
-    try:
-        tz_start = mktime(strptime(str(timesection[0]), "%Y%m%d"))
-        tz_stop = mktime(strptime(str(timesection[1]), "%Y%m%d"))
-    except ValueError:
-        tz_start = 0
-        tz_stop = 0
-
-    def tz(val, timesection):
+    def tz(val):
         return True if tz_start <= val <= tz_stop else False
-    timesection_result = db.search(Q.rls_ts.test(tz, timesection))
-    [time_set.add(i['id']) for i in timesection_result]
+    if timesection != (0, 0):
+        try:
+            tz_start = mktime(strptime(str(timesection[0]), "%Y%m%d"))
+            tz_stop = mktime(strptime(str(timesection[1]), "%Y%m%d"))
+        except ValueError:
+            tz_start = 0
+            tz_stop = 0
+        timesection_pool = db.search(Q.rls_ts.test(tz))
+        [time_set.add(i['id']) for i in timesection_pool]
 
-    # Final Set
-    final_set = title_set | pf_set | year_set | time_set
-    for i in search_set_list:
-        if i != set():
-            final_set = final_set & i
-    print list(final_set)
-    print type(list(final_set))
-
+    # Return All Data
     def id_pool(val):
         return True if val in list(final_set) else False
-    final_list = db.search(Q.id.test(id_pool))
-    if not noprint:
-        calprint(final_list)
-    print len(final_list)
-    print len(final_set)
-    return final_list
+    if not alldata:
+        final_list += db.search(Q.type == 'sched')
+        final_list += db.search(Q.type == 'tba')
+    else:
+        final_set = title_set | pf_set | year_set | time_set
+        for i in search_set_list:
+            if i != set():
+                final_set = final_set & i
+        final_list = db.search(Q.id.test(id_pool))
 
+    # No print
+    calprint(final_list) if not noprint else False
+
+    # Export ics file
+    calexport(final_list) if not export else False
+
+    return final_list
 
 @cal.command()
 def calstat():
@@ -184,21 +184,40 @@ def calstat():
     print('Statistic: %s' % total)
     return
 
-
 def calprint(final_list):
     """Print the result to screen."""
     for i in final_list:
         print i
     return
 
-
 def calexport(final_list):
     with open('gamecores.ics', 'w') as f:
-        print f.mode
-        f.write('1) first line\n')
-        f.write('2) second line\n')
+        f.write('BEGIN:VCALENDAR\n' +
+                'PRODID:-//Gamecores//Gamecores Calendar//EN\n' +
+                'VERSION:2.0\n' +
+                'CALSCALE:GREGORIAN\n' +
+                'X-WR-CALNAME:Gamecores\n')
+    for i in final_list:
+        if i['type'] == 'sched':
+            event_time = datetime.fromtimestamp(i['rls_ts'])
+            event_time = event_time.strftime('%Y%m%d')
+        with open('gamecores.ics', 'a') as f:
+            f.write('BEGIN:VEVENT\n' +
+                    'DTSTART:' + event_time + '\n' +
+                    'DTEND:' + event_time + '\n' +
+                    'DESCRIPTION:' + i['title'].encode('utf-8') + '\\n' +
+                    i['title'].encode('utf-8') + '\\n' +
+                    i['title'].encode('utf-8') + '\\n' +
+                    i['title'].encode('utf-8') + '\\n' +
+                    i['title'].encode('utf-8') + '\\n' +
+                    i['title'].encode('utf-8') + '\\n' +
+                    i['title'].encode('utf-8') + '\n' +
+                    'SUMMARY:' + i['title'].encode('utf-8') + '\n' +
+                    'URL:' + i['url'].encode('utf-8') + '\n' +
+                    'END:VEVENT\n')
+    with open('gamecores.ics', 'a') as f:
+        f.write('END:VCALENDAR\n')
     return
-
 
 gc = click.CommandCollection(sources=[cal])
 db = TinyDB(os.path.dirname(__file__) + '/cal_db.json')
@@ -207,6 +226,6 @@ Q = Query()
 if __name__ == '__main__':
     # calinit()
     # calupdate()
-    # calshow()
+    calshow()
     # calstat()
-    calexport(0)
+    # calexport(0)
