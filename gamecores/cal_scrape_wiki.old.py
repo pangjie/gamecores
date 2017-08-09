@@ -157,12 +157,15 @@ def extract_infobox(url):
         desc['title'] = soup.find('title').get_text()
     desc['title'] = fixer('title', desc['title'])
     for item in items:
+        # print item
         try:
             key = fix_key(item.find('th').get_text())
             value = item.find('td').get_text()
             desc[key] = fixer(key, value)
         except AttributeError:
-            pass
+            img = item.find('img')
+            img_src = img.get('src') if img is not None else ''
+            desc[key] = img_src
     return desc
 
 
@@ -271,26 +274,27 @@ if __name__ == '__main__':
     # year = raw_input('Please input a year between 2007-2018:')
     # url = 'https://en.wikipedia.org/wiki/' + year + '_in_video_gaming'
     # x = scrape_sch(url)
-    x = scrape_sch('https://en.wikipedia.org/wiki/2008_in_video_gaming')
-    sleep(3)
-    x = scrape_sch('https://en.wikipedia.org/wiki/2009_in_video_gaming')
-    sleep(3)
-    x = scrape_sch('https://en.wikipedia.org/wiki/2010_in_video_gaming')
-    sleep(3)
-    x = scrape_sch('https://en.wikipedia.org/wiki/2011_in_video_gaming')
-    sleep(3)
-    x = scrape_sch('https://en.wikipedia.org/wiki/2012_in_video_gaming')
-    sleep(3)
-    x = scrape_sch('https://en.wikipedia.org/wiki/2013_in_video_gaming')
-    sleep(3)
-    x = scrape_sch('https://en.wikipedia.org/wiki/2014_in_video_gaming')
-    sleep(3)
-    x = scrape_sch('https://en.wikipedia.org/wiki/2015_in_video_gaming')
-    sleep(3)
-    x = scrape_sch('https://en.wikipedia.org/wiki/2016_in_video_gaming')
-    sleep(3)
-    x = scrape_sch('https://en.wikipedia.org/wiki/2017_in_video_gaming')
-    sleep(3)
+    # x = scrape_sch('https://en.wikipedia.org/wiki/2008_in_video_gaming')
+    # sleep(3)
+    # x = scrape_sch('https://en.wikipedia.org/wiki/2009_in_video_gaming')
+    # sleep(3)
+    # x = scrape_sch('https://en.wikipedia.org/wiki/2010_in_video_gaming')
+    # sleep(3)
+    # x = scrape_sch('https://en.wikipedia.org/wiki/2011_in_video_gaming')
+    # sleep(3)
+    # x = scrape_sch('https://en.wikipedia.org/wiki/2012_in_video_gaming')
+    # sleep(3)
+    # x = scrape_sch('https://en.wikipedia.org/wiki/2013_in_video_gaming')
+    # sleep(3)
+    # x = scrape_sch('https://en.wikipedia.org/wiki/2014_in_video_gaming')
+    # sleep(3)
+    # x = scrape_sch('https://en.wikipedia.org/wiki/2015_in_video_gaming')
+    # sleep(3)
+    # x = scrape_sch('https://en.wikipedia.org/wiki/2016_in_video_gaming')
+    # sleep(3)
+    # x = scrape_sch('https://en.wikipedia.org/wiki/2017_in_video_gaming')
+    # sleep(3)
+    print extract_infobox('https://en.wikipedia.org/wiki/Lego_Worlds')
     # for i in x:
     #     print("%8s: %s" % ('title', i['title']))
     #     print("%8s: %s, %s" % ('release', i['release'], i['year']))

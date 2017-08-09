@@ -40,7 +40,8 @@ def scrape_sch(url):
 
 
 def data_washer(x, year):
-    key = ['rls_ts', 'year', 'month', 'day', 'title', 'platform', 'url']
+    key = ['rls_ts', 'year', 'month', 'day',
+           'title', 'platform', 'url', 'desc']
     ref = re.compile(r'^(\[\d+\])+$|\[\w*\s\w*\]')
     if year in ['2017', '2018']:
         [x.remove(x[4]) for i in x if re.match(ref, x[4]) is not None]
@@ -52,13 +53,15 @@ def data_washer(x, year):
     x.insert(0, year)
     x.insert(0, gen_rls_ts(x))
     x[4] = fix_title(x[4])
+    x.append(extract_infobox(x[6]))
     return dict(zip(key, x))
 
 
 def tba_data_washer(x, year):
-    key = ['year', 'title', 'release', 'platform', 'genre', 'url']
+    key = ['year', 'title', 'release', 'platform', 'genre', 'url', 'desc']
     x[0] = fix_title(x[0])
     x.insert(0, year)
+    x.append(extract_infobox(x[5]))
     return dict(zip(key, x))
 
 
@@ -119,6 +122,37 @@ def gen_rls_ts(desc):
         return mktime(strptime(desc[0] + desc[1] + desc[2], "%Y%B%d"))
     except ValueError:
         return 0
+
+
+def extract_infobox(url):
+    """
+    The URL is a detail-info page of a game.
+    """
+    desc = {}
+    print url
+    try:
+        resp = requests.get(url)
+    except requests.exceptions.MissingSchema:
+        return desc
+    soup = bs4.BeautifulSoup(resp.text, "html.parser")
+    info = soup.find('table', class_='infobox')
+    items = info.find_all('tr') if info is not None else []
+    try:
+        desc['title'] = items[0].find('th', class_='fn').get_text()
+    except (AttributeError, IndexError):
+        desc['title'] = soup.find('title').get_text()
+    desc['title'] = fix_value(desc['title'])
+    for item in items:
+        # print item
+        try:
+            key = fix_value(item.find('th').get_text())
+            value = item.find('td').get_text()
+            desc[key] = fix_value(value)
+        except AttributeError:
+            img = item.find('img')
+            img_src = img.get('src') if img is not None else None
+            desc['img_src'] = img_src
+    return desc
 
 
 def fix_value(value):

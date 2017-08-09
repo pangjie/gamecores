@@ -21,6 +21,7 @@ import cal_scrape_wiki as g
 def cal():
     return
 
+
 @cal.command()
 def calinit():
     """Clean and initialize the database file."""
@@ -45,6 +46,7 @@ def calinit():
         db.insert(src)
     print("Init Fineshed!")
     return
+
 
 @cal.command()
 @click.option('--deep', default=False, is_flag=True)
@@ -95,11 +97,12 @@ def calupdate(deep):
     print("Update Finished!")
     return
 
+
 @cal.command()
 @click.option('--title', '-t', default='---')
 @click.option('--platform', '-p', default='---')
-@click.option('--year', '-y', default='---')
-@click.option('--timesection', '-ts', nargs=2, default=(20170707, 20170909), type=int)
+@click.option('--year', '-y', default='2017')
+@click.option('--timesection', '-ts', nargs=2, default=(0, 0), type=int)
 @click.option('--alldata', '-a', default=False, is_flag=True)
 @click.option('--export', '-e', default=False, is_flag=True)
 @click.option('--noprint', default=False, is_flag=True)
@@ -155,7 +158,7 @@ def calshow(title, platform, year, timesection, alldata, export, noprint):
     # Return All Data
     def id_pool(val):
         return True if val in list(final_set) else False
-    if not alldata:
+    if alldata:
         final_list += db.search(Q.type == 'sched')
         final_list += db.search(Q.type == 'tba')
     else:
@@ -166,12 +169,13 @@ def calshow(title, platform, year, timesection, alldata, export, noprint):
         final_list = db.search(Q.id.test(id_pool))
 
     # No print
-    calprint(final_list) if not noprint else False
+    calprint(final_list) if noprint else False
 
     # Export ics file
     calexport(final_list) if not export else False
 
     return final_list
+
 
 @cal.command()
 def calstat():
@@ -184,13 +188,16 @@ def calstat():
     print('Statistic: %s' % total)
     return
 
+
 def calprint(final_list):
     """Print the result to screen."""
     for i in final_list:
         print i
     return
 
+
 def calexport(final_list):
+    desc = ''
     with open('gamecores.ics', 'w') as f:
         f.write('BEGIN:VCALENDAR\n' +
                 'PRODID:-//Gamecores//Gamecores Calendar//EN\n' +
@@ -201,23 +208,23 @@ def calexport(final_list):
         if i['type'] == 'sched':
             event_time = datetime.fromtimestamp(i['rls_ts'])
             event_time = event_time.strftime('%Y%m%d')
+        for kv in i['desc']:
+            try:
+                desc = desc + kv + ': ' + i['desc'][kv] + '\n'
+            except TypeError:
+                continue
         with open('gamecores.ics', 'a') as f:
             f.write('BEGIN:VEVENT\n' +
                     'DTSTART:' + event_time + '\n' +
                     'DTEND:' + event_time + '\n' +
-                    'DESCRIPTION:' + i['title'].encode('utf-8') + '\\n' +
-                    i['title'].encode('utf-8') + '\\n' +
-                    i['title'].encode('utf-8') + '\\n' +
-                    i['title'].encode('utf-8') + '\\n' +
-                    i['title'].encode('utf-8') + '\\n' +
-                    i['title'].encode('utf-8') + '\\n' +
-                    i['title'].encode('utf-8') + '\n' +
+                    'DESCRIPTION:' + desc.encode('utf-8') + '\n' +
                     'SUMMARY:' + i['title'].encode('utf-8') + '\n' +
                     'URL:' + i['url'].encode('utf-8') + '\n' +
                     'END:VEVENT\n')
     with open('gamecores.ics', 'a') as f:
         f.write('END:VCALENDAR\n')
     return
+
 
 gc = click.CommandCollection(sources=[cal])
 db = TinyDB(os.path.dirname(__file__) + '/cal_db.json')
