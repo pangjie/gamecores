@@ -41,7 +41,7 @@ def scrape_sch(url):
 
 def data_washer(x, year):
     key = ['rls_ts', 'year', 'month', 'day',
-           'title', 'platform', 'url', 'desc']
+           'title', 'platform', 'url']
     ref = re.compile(r'^(\[\d+\])+$|\[\w*\s\w*\]')
     if year in ['2017', '2018']:
         [x.remove(x[4]) for i in x if re.match(ref, x[4]) is not None]
@@ -53,15 +53,15 @@ def data_washer(x, year):
     x.insert(0, year)
     x.insert(0, gen_rls_ts(x))
     x[4] = fix_title(x[4])
-    x.append(extract_infobox(x[6]))
+    # x.append(extract_infobox(x[6]))
     return dict(zip(key, x))
 
 
 def tba_data_washer(x, year):
-    key = ['year', 'title', 'release', 'platform', 'genre', 'url', 'desc']
+    key = ['year', 'title', 'release', 'platform', 'genre', 'url']
     x[0] = fix_title(x[0])
     x.insert(0, year)
-    x.append(extract_infobox(x[5]))
+    # x.append(extract_infobox(x[5]))
     return dict(zip(key, x))
 
 

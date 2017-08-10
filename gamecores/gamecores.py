@@ -169,7 +169,7 @@ def calshow(title, platform, year, timesection, alldata, export, noprint):
         final_list = db.search(Q.id.test(id_pool))
 
     # No print
-    calprint(final_list) if noprint else False
+    calprint(final_list) if not noprint else False
 
     # Export ics file
     calexport(final_list) if not export else False
@@ -192,7 +192,11 @@ def calstat():
 def calprint(final_list):
     """Print the result to screen."""
     for i in final_list:
-        print i
+        if i['type'] == 'tba':
+            return
+        print("%-8s: %s" % ('Title', i['title'].encode('utf-8')))
+        print("%-8s: %s %s %s" % ('Release', i['month'], i['day'], i['year']))
+        print("%-8s: %s\n" % ('Platform', i['platform']))
     return
 
 
@@ -217,7 +221,9 @@ def calexport(final_list):
             f.write('BEGIN:VEVENT\n' +
                     'DTSTART:' + event_time + '\n' +
                     'DTEND:' + event_time + '\n' +
-                    'DESCRIPTION:' + desc.encode('utf-8') + '\n' +
+                    'DESCRIPTION:' +
+                    'Title: ' + i['title'].encode('utf-8') + '\\n' +
+                    'Platform: ' + i['platform'].encode('utf-8') + '\n' +
                     'SUMMARY:' + i['title'].encode('utf-8') + '\n' +
                     'URL:' + i['url'].encode('utf-8') + '\n' +
                     'END:VEVENT\n')
