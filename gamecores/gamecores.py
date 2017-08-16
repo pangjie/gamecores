@@ -49,7 +49,8 @@ def calinit():
 
 
 @cal.command()
-@click.option('--deep', default=False, is_flag=True)
+@click.option('--deep', default=False, is_flag=True,
+              help='Update data including games released before last year.')
 def calupdate(deep):
     """Update data of actived years """
     print("Star to update database...")
@@ -99,13 +100,21 @@ def calupdate(deep):
 
 
 @cal.command()
-@click.option('--title', '-t', default='---')
-@click.option('--platform', '-p', default='---')
-@click.option('--year', '-y', default='2017')
-@click.option('--timesection', '-ts', nargs=2, default=(0, 0), type=int)
-@click.option('--alldata', '-a', default=False, is_flag=True)
-@click.option('--export', '-e', default=False, is_flag=True)
-@click.option('--noprint', default=False, is_flag=True)
+@click.option('--title', '-t', default='---',
+              help='Search games by title')
+@click.option('--platform', '-p', default='---',
+              help='Search games by platform, such as -p \'NS&PS4|XBO\'')
+@click.option('--year', '-y', default=0, type=int,
+              help='Search games by release year')
+@click.option('--timesection', '-ts', nargs=2, default=(0, 0), type=int,
+              help='Search games by release time, ' +
+              'such as \'-ts 20150101 20160302\' ')
+@click.option('--alldata', '-a', default=False, is_flag=True,
+              help='Show all data in the database')
+@click.option('--export', '-e', default=False, is_flag=True,
+              help='Export the search result as a ics file')
+@click.option('--noprint', default=False, is_flag=True,
+              help='Do not print the search result out')
 def calshow(title, platform, year, timesection, alldata, export, noprint):
     """Show information in the database"""
     title_set = set()
@@ -138,8 +147,8 @@ def calshow(title, platform, year, timesection, alldata, export, noprint):
             [pf_set.add(j['id']) for j in platform_pool]
 
     # Search Year
-    if year != '---':
-        year_pool = db.search(Q.year == year)
+    if year != 0:
+        year_pool = db.search(Q.year == str(year))
         [year_set.add(i['id']) for i in year_pool]
 
     # Search Time Zone
@@ -168,11 +177,18 @@ def calshow(title, platform, year, timesection, alldata, export, noprint):
                 final_set = final_set & i
         final_list = db.search(Q.id.test(id_pool))
 
+    def rls_ts(s):
+        try:
+            return s['rls_ts']
+        except KeyError:
+            return 2502399386
+    final_list = sorted(final_list, key=rls_ts)
+
     # No print
     calprint(final_list) if not noprint else False
 
     # Export ics file
-    calexport(final_list) if not export else False
+    calexport(final_list) if export else False
 
     return final_list
 
@@ -191,17 +207,27 @@ def calstat():
 
 def calprint(final_list):
     """Print the result to screen."""
+    p_date = '\033[92m'
+    p_tba = '\033[93m'
+    p_title = '\033[1m'
+    p_platform = '\033[91m'
+    end = '\033[0m'
     for i in final_list:
         if i['type'] == 'tba':
-            return
-        print("%-8s: %s" % ('Title', i['title'].encode('utf-8')))
-        print("%-8s: %s %s %s" % ('Release', i['month'], i['day'], i['year']))
-        print("%-8s: %s\n" % ('Platform', i['platform']))
+            date = p_tba + 'To be announced ' + end
+        else:
+            date = datetime.fromtimestamp(i['rls_ts']).strftime('%Y.%b.%d ')
+        title = "%s" % (i['title'])
+        platform = " @ %s" % (i['platform'])
+        print("%s%s%s%s%s%s%s%s%s" %
+              (p_date, date.encode('utf-8'), end,
+               p_title, title.encode('utf-8'), end,
+               p_platform, platform.encode('utf-8'), end))
     return
 
 
 def calexport(final_list):
-    desc = ''
+    # desc = ''
     with open('gamecores.ics', 'w') as f:
         f.write('BEGIN:VCALENDAR\n' +
                 'PRODID:-//Gamecores//Gamecores Calendar//EN\n' +
@@ -212,11 +238,11 @@ def calexport(final_list):
         if i['type'] == 'sched':
             event_time = datetime.fromtimestamp(i['rls_ts'])
             event_time = event_time.strftime('%Y%m%d')
-        for kv in i['desc']:
-            try:
-                desc = desc + kv + ': ' + i['desc'][kv] + '\n'
-            except TypeError:
-                continue
+        # for kv in i['desc']:
+        #     try:
+        #         desc = desc + kv + ': ' + i['desc'][kv] + '\n'
+        #     except TypeError:
+        #         continue
         with open('gamecores.ics', 'a') as f:
             f.write('BEGIN:VEVENT\n' +
                     'DTSTART:' + event_time + '\n' +
@@ -241,4 +267,3 @@ if __name__ == '__main__':
     # calupdate()
     calshow()
     # calstat()
-    # calexport(0)

@@ -53,6 +53,7 @@ def data_washer(x, year):
     x.insert(0, year)
     x.insert(0, gen_rls_ts(x))
     x[4] = fix_title(x[4])
+    x[5] = fix_platform(x[5])
     # x.append(extract_infobox(x[6]))
     return dict(zip(key, x))
 
@@ -61,6 +62,7 @@ def tba_data_washer(x, year):
     key = ['year', 'title', 'release', 'platform', 'genre', 'url']
     x[0] = fix_title(x[0])
     x.insert(0, year)
+    x[3] = fix_platform(x[3])
     # x.append(extract_infobox(x[5]))
     return dict(zip(key, x))
 
@@ -174,6 +176,36 @@ def fix_title(value):
     value = re.sub(r';', ':', value)
     value = re.sub(r'\n', ' ', value)
     return value
+
+
+def fix_platform(platforms):
+    """
+    Format platforms for uniformity
+    """
+    platforms = fix_value(platforms)
+    platforms = re.sub('\n', ', ', platforms)
+    platforms = re.sub(r'PlayStation\s', 'PS', platforms)
+    # platforms = re.sub(r'Portable|Vita', 'V', platforms)
+    platforms = re.sub(r',*\.*\sVita', ', PSV', platforms)
+    platforms = re.sub(r'Vita', 'V', platforms)
+    platforms = re.sub(r'PS\s4', 'PS4', platforms)
+    platforms = re.sub(r'Xbox\sOne', 'XBO', platforms)
+    platforms = re.sub(r'Xbox 360|^360|\s360', 'X360', platforms)
+    platforms = re.sub(r'macOS|OS\sX', 'Mac', platforms)
+    platforms = re.sub(r'\w*\sWindows|Win', 'PC', platforms)
+    platforms = re.sub(r'Nintendo\sSwitch', 'NS', platforms)
+    platforms = re.sub(r'Nintendo\s3DS', '3DS', platforms)
+    platforms = re.sub(r'Wii\s*U', 'WiiU', platforms)
+    platforms = re.sub(r'Droid', 'Android', platforms)
+    platforms = re.sub(r'(Amazon\s)*Fire', 'Amazon Fire', platforms)
+    platforms = re.sub(r'Linux', 'Lin', platforms)
+    platforms = re.sub(r'Consoles|\sand\s|\s*&\s*|\sWorlds', '', platforms)
+    platforms = re.sub(r'Lin XBO', 'Lin, XBO', platforms)
+    platforms = re.sub(r'X360 PSP', 'X360, PSP', platforms)
+    platforms = re.sub(r'WiiU X360', 'WiiU, X360', platforms)
+    platforms = re.sub(r'mobile', 'iOS', platforms)
+    platforms = re.sub(r'N/A', '', platforms)
+    return platforms
 
 
 if __name__ == '__main__':
