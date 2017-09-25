@@ -4,6 +4,1098 @@ VERSION:2.0
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Gamecores
 BEGIN:VEVENT
+DTSTART:20170110
+DTEND:20170110
+DESCRIPTION:Title: Hatsune Miku: Project DIVA Future Tone\nPlatform: PS4
+SUMMARY:Hatsune Miku: Project DIVA Future Tone
+URL:https://en.wikipedia.org/wiki/Hatsune_Miku:_Project_DIVA_Future_Tone
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170112
+DTEND:20170112
+DESCRIPTION:Title: Danganronpa V3: Killing Harmony\nPlatform: PS4, PSV
+SUMMARY:Danganronpa V3: Killing Harmony
+URL:https://en.wikipedia.org/wiki/Danganronpa_V3:_Killing_Harmony
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170112
+DTEND:20170112
+DESCRIPTION:Title: School Girl/Zombie Hunter\nPlatform: PS4
+SUMMARY:School Girl/Zombie Hunter
+URL:https://en.wikipedia.org/wiki/School_Girl/Zombie_Hunter
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170117
+DTEND:20170117
+DESCRIPTION:Title: Fate/Extella: The Umbral Star\nPlatform: PS4, PSV
+SUMMARY:Fate/Extella: The Umbral Star
+URL:https://en.wikipedia.org/wiki/Fate/Extella:_The_Umbral_Star
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170117
+DTEND:20170117
+DESCRIPTION:Title: Mighty Morphin Power Rangers: Mega Battle\nPlatform: PS4, XBO
+SUMMARY:Mighty Morphin Power Rangers: Mega Battle
+URL:https://en.wikipedia.org/wiki/Power_Rangers
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170119
+DTEND:20170119
+DESCRIPTION:Title: Birthdays the Beginning\nPlatform: PS4
+SUMMARY:Birthdays the Beginning
+URL:https://en.wikipedia.org#endnote_PublishedA
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170119
+DTEND:20170119
+DESCRIPTION:Title: Valkyria Revolution\nPlatform: PS4, PSV
+SUMMARY:Valkyria Revolution
+URL:https://en.wikipedia.org/wiki/Valkyria_Revolution
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170120
+DTEND:20170120
+DESCRIPTION:Title: Gravity Rush 2\nPlatform: PS4
+SUMMARY:Gravity Rush 2
+URL:https://en.wikipedia.org/wiki/Gravity_Rush_2
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170124
+DTEND:20170124
+DESCRIPTION:Title: Kingdom Hearts HD 2.8 Final Chapter Prologue\nPlatform: PS4
+SUMMARY:Kingdom Hearts HD 2.8 Final Chapter Prologue
+URL:https://en.wikipedia.org/wiki/Kingdom_Hearts_HD_2.8_Final_Chapter_Prologue
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170124
+DTEND:20170124
+DESCRIPTION:Title: Resident Evil 7: Biohazard\nPlatform: PC, PS4, XBO
+SUMMARY:Resident Evil 7: Biohazard
+URL:https://en.wikipedia.org/wiki/Resident_Evil_7:_Biohazard
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170124
+DTEND:20170124
+DESCRIPTION:Title: Tales of Berseria\nPlatform: PC, PS4
+SUMMARY:Tales of Berseria
+URL:https://en.wikipedia.org/wiki/Tales_of_Berseria
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170124
+DTEND:20170124
+DESCRIPTION:Title: Yakuza 0\nPlatform: PS4
+SUMMARY:Yakuza 0
+URL:https://en.wikipedia.org/wiki/Yakuza_0
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170130
+DTEND:20170130
+DESCRIPTION:Title: Double Dragon IV\nPlatform: PC, PS4
+SUMMARY:Double Dragon IV
+URL:https://en.wikipedia.org/wiki/Double_Dragon_IV
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170131
+DTEND:20170131
+DESCRIPTION:Title: Digimon World: Next Order\nPlatform: PS4
+SUMMARY:Digimon World: Next Order
+URL:https://en.wikipedia.org/wiki/Digimon_World:_Next_Order
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170131
+DTEND:20170131
+DESCRIPTION:Title: Divide\nPlatform: PS4
+SUMMARY:Divide
+URL:
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170131
+DTEND:20170131
+DESCRIPTION:Title: Dynasty Warriors: Godseekers\nPlatform: PS4, PSV
+SUMMARY:Dynasty Warriors: Godseekers
+URL:https://en.wikipedia.org/wiki/Dynasty_Warriors:_Godseekers
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170207
+DTEND:20170207
+DESCRIPTION:Title: Nioh\nPlatform: PS4
+SUMMARY:Nioh
+URL:https://en.wikipedia.org/wiki/Nioh
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170214
+DTEND:20170214
+DESCRIPTION:Title: For Honor\nPlatform: PC, PS4, XBO
+SUMMARY:For Honor
+URL:https://en.wikipedia.org/wiki/For_Honor
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170214
+DTEND:20170214
+DESCRIPTION:Title: Ride 2\nPlatform: PS4, XBO
+SUMMARY:Ride 2
+URL:https://en.wikipedia.org/wiki/Ride_2
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170214
+DTEND:20170214
+DESCRIPTION:Title: Sniper Elite 4\nPlatform: PC, PS4, XBO
+SUMMARY:Sniper Elite 4
+URL:https://en.wikipedia.org/wiki/Sniper_Elite_4
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170221
+DTEND:20170221
+DESCRIPTION:Title: Berserk and the Band of the Hawk\nPlatform: PC, PS4, PSV
+SUMMARY:Berserk and the Band of the Hawk
+URL:https://en.wikipedia.org/wiki/Berserk_and_the_Band_of_the_Hawk
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170221
+DTEND:20170221
+DESCRIPTION:Title: Night in the Woods\nPlatform: PC, Mac, Lin, PS4
+SUMMARY:Night in the Woods
+URL:https://en.wikipedia.org/wiki/Night_in_the_Woods
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170221
+DTEND:20170221
+DESCRIPTION:Title: Ys Origin\nPlatform: PS4
+SUMMARY:Ys Origin
+URL:https://en.wikipedia.org/wiki/Ys_Origin
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170228
+DTEND:20170228
+DESCRIPTION:Title: Horizon Zero Dawn\nPlatform: PS4
+SUMMARY:Horizon Zero Dawn
+URL:https://en.wikipedia.org/wiki/Horizon_Zero_Dawn
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170228
+DTEND:20170228
+DESCRIPTION:Title: Torment: Tides of Numenera\nPlatform: PC, PS4, XBO
+SUMMARY:Torment: Tides of Numenera
+URL:https://en.wikipedia.org/wiki/Torment:_Tides_of_Numenera
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170303
+DTEND:20170303
+DESCRIPTION:Title: 1-2-Switch\nPlatform: NS
+SUMMARY:1-2-Switch
+URL:https://en.wikipedia.org/wiki/1-2-Switch
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170303
+DTEND:20170303
+DESCRIPTION:Title: Human Resource Machine\nPlatform: NS
+SUMMARY:Human Resource Machine
+URL:https://en.wikipedia.org/wiki/Human_Resource_Machine
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170303
+DTEND:20170303
+DESCRIPTION:Title: I Am Setsuna\nPlatform: NS
+SUMMARY:I Am Setsuna
+URL:https://en.wikipedia.org/wiki/I_Am_Setsuna
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170303
+DTEND:20170303
+DESCRIPTION:Title: Just Dance 2017\nPlatform: NS
+SUMMARY:Just Dance 2017
+URL:https://en.wikipedia.org/wiki/Just_Dance_2017
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170303
+DTEND:20170303
+DESCRIPTION:Title: Little Inferno\nPlatform: NS
+SUMMARY:Little Inferno
+URL:https://en.wikipedia.org/wiki/Little_Inferno
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170303
+DTEND:20170303
+DESCRIPTION:Title: Skylanders: Imaginators\nPlatform: NS
+SUMMARY:Skylanders: Imaginators
+URL:https://en.wikipedia.org/wiki/Skylanders:_Imaginators
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170303
+DTEND:20170303
+DESCRIPTION:Title: Snipperclips\nPlatform: NS
+SUMMARY:Snipperclips
+URL:https://en.wikipedia.org/wiki/Snipperclips
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170303
+DTEND:20170303
+DESCRIPTION:Title: Super Bomberman R\nPlatform: NS
+SUMMARY:Super Bomberman R
+URL:https://en.wikipedia.org/wiki/Super_Bomberman_R
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170303
+DTEND:20170303
+DESCRIPTION:Title: The Binding of Isaac: Afterbirth+\nPlatform: NS
+SUMMARY:The Binding of Isaac: Afterbirth+
+URL:https://en.wikipedia.org/wiki/The_Binding_of_Isaac:_Rebirth
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170303
+DTEND:20170303
+DESCRIPTION:Title: The Legend of Zelda: Breath of the Wild\nPlatform: NS, WiiU
+SUMMARY:The Legend of Zelda: Breath of the Wild
+URL:https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_Breath_of_the_Wild
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170303
+DTEND:20170303
+DESCRIPTION:Title: World of Goo\nPlatform: NS
+SUMMARY:World of Goo
+URL:https://en.wikipedia.org/wiki/World_of_Goo
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170307
+DTEND:20170307
+DESCRIPTION:Title: Atelier Firis: The Alchemist and the Mysterious Journey\nPlatform: PC, PS4, PSV
+SUMMARY:Atelier Firis: The Alchemist and the Mysterious Journey
+URL:https://en.wikipedia.org/wiki/Atelier_Firis:_The_Alchemist_and_the_Mysterious_Journey
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170307
+DTEND:20170307
+DESCRIPTION:Title: Lego Worlds\nPlatform: PC, PS4, XBO
+SUMMARY:Lego Worlds
+URL:https://en.wikipedia.org/wiki/Lego_Worlds
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170307
+DTEND:20170307
+DESCRIPTION:Title: Nier: Automata\nPlatform: PS4
+SUMMARY:Nier: Automata
+URL:https://en.wikipedia.org/wiki/Nier:_Automata
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170307
+DTEND:20170307
+DESCRIPTION:Title: Tom Clancy's Ghost Recon Wildlands\nPlatform: PC, PS4, XBO
+SUMMARY:Tom Clancy's Ghost Recon Wildlands
+URL:https://en.wikipedia.org/wiki/Tom_Clancy%27s_Ghost_Recon_Wildlands
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170314
+DTEND:20170314
+DESCRIPTION:Title: Danganronpa 1•2 Reload\nPlatform: PS4
+SUMMARY:Danganronpa 1•2 Reload
+URL:https://en.wikipedia.org/wiki/Danganronpa:_Trigger_Happy_Havoc
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170314
+DTEND:20170314
+DESCRIPTION:Title: Styx: Shards of Darkness\nPlatform: PC, PS4, XBO
+SUMMARY:Styx: Shards of Darkness
+URL:https://en.wikipedia.org/wiki/Styx:_Shards_of_Darkness
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170316
+DTEND:20170316
+DESCRIPTION:Title: Accel World VS Sword Art Online: Millennium Twilight\nPlatform: PS4, PSV
+SUMMARY:Accel World VS Sword Art Online: Millennium Twilight
+URL:https://en.wikipedia.org#endnote_PublishedA
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170316
+DTEND:20170316
+DESCRIPTION:Title: Senran Kagura: Peach Beach Splash\nPlatform: PS4
+SUMMARY:Senran Kagura: Peach Beach Splash
+URL:https://en.wikipedia.org/wiki/Senran_Kagura:_Peach_Beach_Splash
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170317
+DTEND:20170317
+DESCRIPTION:Title: Kona\nPlatform: PC, Mac, Lin, XBO, PS4
+SUMMARY:Kona
+URL:
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170321
+DTEND:20170321
+DESCRIPTION:Title: Mass Effect: Andromeda\nPlatform: PC, PS4, XBO
+SUMMARY:Mass Effect: Andromeda
+URL:https://en.wikipedia.org/wiki/Mass_Effect:_Andromeda
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170321
+DTEND:20170321
+DESCRIPTION:Title: Toukiden 2\nPlatform: PC, PS4, PSV
+SUMMARY:Toukiden 2
+URL:https://en.wikipedia.org/wiki/Toukiden_2
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170321
+DTEND:20170321
+DESCRIPTION:Title: Troll and I\nPlatform: PC, PS4, XBO
+SUMMARY:Troll and I
+URL:https://en.wikipedia.org/wiki/Troll_and_I
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170324
+DTEND:20170324
+DESCRIPTION:Title: Zero Escape: The Nonary Games\nPlatform: PC, PS4, PSV
+SUMMARY:Zero Escape: The Nonary Games
+URL:https://en.wikipedia.org/wiki/Zero_Escape
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170328
+DTEND:20170328
+DESCRIPTION:Title: Has-Been Heroes\nPlatform: PC, NS, PS4, XBO
+SUMMARY:Has-Been Heroes
+URL:https://en.wikipedia.org/wiki/Has-Been_Heroes
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170328
+DTEND:20170328
+DESCRIPTION:Title: Kingdom Hearts HD 1.5 Remix\nPlatform: PS4
+SUMMARY:Kingdom Hearts HD 1.5 Remix
+URL:https://en.wikipedia.org/wiki/Kingdom_Hearts_HD_1.5_Remix
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170328
+DTEND:20170328
+DESCRIPTION:Title: Kingdom Hearts HD 2.5 Remix\nPlatform: PS4
+SUMMARY:Kingdom Hearts HD 2.5 Remix
+URL:https://en.wikipedia.org/wiki/Kingdom_Hearts_HD_2.5_Remix
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170328
+DTEND:20170328
+DESCRIPTION:Title: MLB The Show 17\nPlatform: PS4
+SUMMARY:MLB The Show 17
+URL:https://en.wikipedia.org/wiki/MLB_The_Show_17
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170328
+DTEND:20170328
+DESCRIPTION:Title: Old Time Hockey\nPlatform: PC, PS4, XBO
+SUMMARY:Old Time Hockey
+URL:https://en.wikipedia.org/wiki/Old_Time_Hockey_(video_game)
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170328
+DTEND:20170328
+DESCRIPTION:Title: Rain World\nPlatform: PC, PS4
+SUMMARY:Rain World
+URL:https://en.wikipedia.org/wiki/Rain_World
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170328
+DTEND:20170328
+DESCRIPTION:Title: Snake Pass\nPlatform: PC, NS, PS4, XBO
+SUMMARY:Snake Pass
+URL:https://en.wikipedia.org/wiki/Snake_Pass_(video_game)
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170328
+DTEND:20170328
+DESCRIPTION:Title: The Walking Dead: Season Three — Episode 3\nPlatform: PC, Mac, PS4, XBO, iOS, Android
+SUMMARY:The Walking Dead: Season Three — Episode 3
+URL:https://en.wikipedia.org/wiki/The_Walking_Dead:_A_New_Frontier
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170330
+DTEND:20170330
+DESCRIPTION:Title: Blue Reflection\nPlatform: PS4, PSV
+SUMMARY:Blue Reflection
+URL:https://en.wikipedia.org/wiki/Blue_Reflection
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170330
+DTEND:20170330
+DESCRIPTION:Title: Musou Stars\nPlatform: PS4, PSV
+SUMMARY:Musou Stars
+URL:https://en.wikipedia.org/wiki/Musou_Stars
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170404
+DTEND:20170404
+DESCRIPTION:Title: Drawn to Death\nPlatform: PS4
+SUMMARY:Drawn to Death
+URL:https://en.wikipedia.org/wiki/Drawn_to_Death
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170404
+DTEND:20170404
+DESCRIPTION:Title: Lego City Undercover\nPlatform: PC, NS, PS4, XBO
+SUMMARY:Lego City Undercover
+URL:https://en.wikipedia.org/wiki/Lego_City_Undercover
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170404
+DTEND:20170404
+DESCRIPTION:Title: PaRappa the Rapper Remastered\nPlatform: PS4
+SUMMARY:PaRappa the Rapper Remastered
+URL:https://en.wikipedia.org/wiki/PaRappa_the_Rapper
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170404
+DTEND:20170404
+DESCRIPTION:Title: Persona 5\nPlatform: PS4, PS3
+SUMMARY:Persona 5
+URL:https://en.wikipedia.org/wiki/Persona_5
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170407
+DTEND:20170407
+DESCRIPTION:Title: Bulletstorm: Full Clip Edition\nPlatform: PC, PS4, XBO
+SUMMARY:Bulletstorm: Full Clip Edition
+URL:https://en.wikipedia.org/wiki/Bulletstorm:_Full_Clip_Edition
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170411
+DTEND:20170411
+DESCRIPTION:Title: Aaero\nPlatform: PC, PS4, XBO
+SUMMARY:Aaero
+URL:https://en.wikipedia.org/w/index.php?title=Aaero&action=edit&redlink=1
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170411
+DTEND:20170411
+DESCRIPTION:Title: The Sexy Brutale\nPlatform: PC, PS4, XBO
+SUMMARY:The Sexy Brutale
+URL:https://en.wikipedia.org/wiki/Tequila_Works
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170411
+DTEND:20170411
+DESCRIPTION:Title: Yooka-Laylee\nPlatform: PC, Mac, PS4, XBO
+SUMMARY:Yooka-Laylee
+URL:https://en.wikipedia.org/wiki/Yooka-Laylee
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170418
+DTEND:20170418
+DESCRIPTION:Title: ATV Renegades\nPlatform: PS4, XBO
+SUMMARY:ATV Renegades
+URL:https://en.wikipedia.org/w/index.php?title=ATV_Renegades&action=edit&redlink=1
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170418
+DTEND:20170418
+DESCRIPTION:Title: Flinthook\nPlatform: PS4, PC, XBO
+SUMMARY:Flinthook
+URL:https://en.wikipedia.org/wiki/Flinthook
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170418
+DTEND:20170418
+DESCRIPTION:Title: Full Throttle Remastered\nPlatform: PC, PS4, PSV
+SUMMARY:Full Throttle Remastered
+URL:https://en.wikipedia.org/wiki/Full_Throttle_(1995_video_game)
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170418
+DTEND:20170418
+DESCRIPTION:Title: Guardians of the Galaxy: The Telltale Series - Episode 1: Tangled Up in Blue\nPlatform: PC, Mac, PS4, XBO, iOS, Android
+SUMMARY:Guardians of the Galaxy: The Telltale Series - Episode 1: Tangled Up in Blue
+URL:https://en.wikipedia.org/wiki/Guardians_of_the_Galaxy:_The_Telltale_Series
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170418
+DTEND:20170418
+DESCRIPTION:Title: Shiness: The Lightning Kingdom\nPlatform: PC, PS4, XBO
+SUMMARY:Shiness: The Lightning Kingdom
+URL:https://en.wikipedia.org/w/index.php?title=Shiness:_The_Lightning_Kingdom&action=edit&redlink=1
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170418
+DTEND:20170418
+DESCRIPTION:Title: The Disney Afternoon Collection\nPlatform: PC, PS4, XBO
+SUMMARY:The Disney Afternoon Collection
+URL:https://en.wikipedia.org/wiki/The_Disney_Afternoon_Collection
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170418
+DTEND:20170418
+DESCRIPTION:Title: The Silver Case\nPlatform: PS4
+SUMMARY:The Silver Case
+URL:https://en.wikipedia.org/wiki/The_Silver_Case
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170418
+DTEND:20170418
+DESCRIPTION:Title: Wonder Boy: The Dragon's Trap\nPlatform: NS, PS4, XBO
+SUMMARY:Wonder Boy: The Dragon's Trap
+URL:https://en.wikipedia.org/wiki/Wonder_Boy:_The_Dragon%27s_Trap
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170425
+DTEND:20170425
+DESCRIPTION:Title: Dragon Quest Heroes II\nPlatform: PC, PS4
+SUMMARY:Dragon Quest Heroes II
+URL:https://en.wikipedia.org/wiki/Dragon_Quest_Heroes_II
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170425
+DTEND:20170425
+DESCRIPTION:Title: Outlast 2\nPlatform: PC, Mac, PS4, XBO
+SUMMARY:Outlast 2
+URL:https://en.wikipedia.org/wiki/Outlast_2
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170425
+DTEND:20170425
+DESCRIPTION:Title: Puyo Puyo Tetris\nPlatform: NS, PS4
+SUMMARY:Puyo Puyo Tetris
+URL:https://en.wikipedia.org/wiki/Puyo_Puyo_Tetris
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170425
+DTEND:20170425
+DESCRIPTION:Title: Sniper: Ghost Warrior 3\nPlatform: PC, PS4, XBO
+SUMMARY:Sniper: Ghost Warrior 3
+URL:https://en.wikipedia.org/wiki/Sniper:_Ghost_Warrior_3
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170425
+DTEND:20170425
+DESCRIPTION:Title: Syberia III\nPlatform: NS, PS4, XBO
+SUMMARY:Syberia III
+URL:https://en.wikipedia.org/wiki/Syberia_III
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170425
+DTEND:20170425
+DESCRIPTION:Title: The Walking Dead: Season Three — Episode 4\nPlatform: PC, Mac, PS4, XBO, iOS, Android
+SUMMARY:The Walking Dead: Season Three — Episode 4
+URL:
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170425
+DTEND:20170425
+DESCRIPTION:Title: What Remains of Edith Finch\nPlatform: PC, PS4
+SUMMARY:What Remains of Edith Finch
+URL:https://en.wikipedia.org/wiki/What_Remains_of_Edith_Finch
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170428
+DTEND:20170428
+DESCRIPTION:Title: Little Nightmares\nPlatform: PC, PS4, XBO
+SUMMARY:Little Nightmares
+URL:https://en.wikipedia.org/wiki/Little_Nightmares
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170428
+DTEND:20170428
+DESCRIPTION:Title: Mario Kart 8 Deluxe\nPlatform: NS
+SUMMARY:Mario Kart 8 Deluxe
+URL:https://en.wikipedia.org/wiki/Mario_Kart_8_Deluxe
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170502
+DTEND:20170502
+DESCRIPTION:Title: Gundam Breaker 3 Break Edition\nPlatform: PS4, PSV
+SUMMARY:Gundam Breaker 3 Break Edition
+URL:
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170505
+DTEND:20170505
+DESCRIPTION:Title: Dreamfall Chapters: The Longest Journey\nPlatform: PS4, XBO
+SUMMARY:Dreamfall Chapters: The Longest Journey
+URL:https://en.wikipedia.org/wiki/Dreamfall_Chapters:_The_Longest_Journey
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170505
+DTEND:20170505
+DESCRIPTION:Title: Prey\nPlatform: PC, PS4, XBO
+SUMMARY:Prey
+URL:https://en.wikipedia.org/wiki/Prey_(2017_video_game)
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170505
+DTEND:20170505
+DESCRIPTION:Title: World to the West\nPlatform: PC, Mac, Lin, PS4, XBO
+SUMMARY:World to the West
+URL:https://en.wikipedia.org/w/index.php?title=World_to_the_West&action=edit&redlink=1
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170509
+DTEND:20170509
+DESCRIPTION:Title: Birthdays the Beginning\nPlatform: PC, PS4
+SUMMARY:Birthdays the Beginning
+URL:https://en.wikipedia.org#endnote_PublishedB
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170509
+DTEND:20170509
+DESCRIPTION:Title: BUTCHER\nPlatform: PS4
+SUMMARY:BUTCHER
+URL:
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170509
+DTEND:20170509
+DESCRIPTION:Title: Elliot Quest\nPlatform: PS4
+SUMMARY:Elliot Quest
+URL:https://en.wikipedia.org/wiki/Elliot_Quest
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170509
+DTEND:20170509
+DESCRIPTION:Title: LocoRoco Remastered\nPlatform: PS4
+SUMMARY:LocoRoco Remastered
+URL:https://en.wikipedia.org/wiki/LocoRoco
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170509
+DTEND:20170509
+DESCRIPTION:Title: NBA Playgrounds\nPlatform: PC, NS, PS4, XBO
+SUMMARY:NBA Playgrounds
+URL:https://en.wikipedia.org/wiki/NBA_Playgrounds
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170509
+DTEND:20170509
+DESCRIPTION:Title: Revenant Saga\nPlatform: PS4, PS3, PSV
+SUMMARY:Revenant Saga
+URL:https://en.wikipedia.org/w/index.php?title=Revenant_Saga&action=edit&redlink=1
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170511
+DTEND:20170511
+DESCRIPTION:Title: Minecraft\nPlatform: NS
+SUMMARY:Minecraft
+URL:https://en.wikipedia.org/wiki/Minecraft
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170512
+DTEND:20170512
+DESCRIPTION:Title: Demon’s Crystals\nPlatform: PS4, XBO
+SUMMARY:Demon’s Crystals
+URL:https://en.wikipedia.org/w/index.php?title=Demon%E2%80%99s_Crystals&action=edit&redlink=1
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170516
+DTEND:20170516
+DESCRIPTION:Title: Akiba's Beat\nPlatform: PS4, PSV
+SUMMARY:Akiba's Beat
+URL:https://en.wikipedia.org/wiki/Akiba%27s_Beat
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170516
+DTEND:20170516
+DESCRIPTION:Title: Future Unfolding\nPlatform: PS4
+SUMMARY:Future Unfolding
+URL:
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170516
+DTEND:20170516
+DESCRIPTION:Title: Injustice 2\nPlatform: PS4, XBO
+SUMMARY:Injustice 2
+URL:https://en.wikipedia.org/wiki/Injustice_2
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170516
+DTEND:20170516
+DESCRIPTION:Title: Seasons After Fall\nPlatform: PS4, XBO
+SUMMARY:Seasons After Fall
+URL:https://en.wikipedia.org/wiki/Seasons_After_Fall
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170516
+DTEND:20170516
+DESCRIPTION:Title: The Surge\nPlatform: PC, PS4, XBO
+SUMMARY:The Surge
+URL:https://en.wikipedia.org/wiki/The_Surge_(video_game)
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170517
+DTEND:20170517
+DESCRIPTION:Title: Black & White Bushido\nPlatform: PS4, XBO
+SUMMARY:Black & White Bushido
+URL:https://en.wikipedia.org/w/index.php?title=Black_%26_White_Bushido&action=edit&redlink=1
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170518
+DTEND:20170518
+DESCRIPTION:Title: Thumper\nPlatform: NS
+SUMMARY:Thumper
+URL:https://en.wikipedia.org/wiki/Thumper_(video_game)
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170519
+DTEND:20170519
+DESCRIPTION:Title: Chroma Squad\nPlatform: PS4, XBO
+SUMMARY:Chroma Squad
+URL:https://en.wikipedia.org/wiki/Chroma_Squad
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170519
+DTEND:20170519
+DESCRIPTION:Title: Shadow Warrior 2\nPlatform: PS4, XBO
+SUMMARY:Shadow Warrior 2
+URL:https://en.wikipedia.org/wiki/Shadow_Warrior_2
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170519
+DTEND:20170519
+DESCRIPTION:Title: Skylar & Plux: Adventure on Clover Island\nPlatform: PC, PS4, XBO
+SUMMARY:Skylar & Plux: Adventure on Clover Island
+URL:https://en.wikipedia.org/wiki/Skylar_%26_Plux:_Adventure_on_Clover_Island
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170523
+DTEND:20170523
+DESCRIPTION:Title: Disgaea 5 Complete\nPlatform: NS
+SUMMARY:Disgaea 5 Complete
+URL:https://en.wikipedia.org/wiki/Disgaea_5
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170523
+DTEND:20170523
+DESCRIPTION:Title: Embers of Mirrim\nPlatform: PC, PS4
+SUMMARY:Embers of Mirrim
+URL:https://en.wikipedia.org/w/index.php?title=Embers_of_Mirrim&action=edit&redlink=1
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170523
+DTEND:20170523
+DESCRIPTION:Title: Utawarerumono: Mask of Deception\nPlatform: PS4, PSV
+SUMMARY:Utawarerumono: Mask of Deception
+URL:https://en.wikipedia.org/wiki/Utawarerumono
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170526
+DTEND:20170526
+DESCRIPTION:Title: Constructor HD\nPlatform: PC, NS, PS4, XBO
+SUMMARY:Constructor HD
+URL:https://en.wikipedia.org/wiki/Constructor_(video_game)#Ports
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170526
+DTEND:20170526
+DESCRIPTION:Title: Friday The 13th: The Game\nPlatform: PC, PS4, XBO
+SUMMARY:Friday The 13th: The Game
+URL:https://en.wikipedia.org/wiki/Friday_the_13th:_The_Game
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170526
+DTEND:20170526
+DESCRIPTION:Title: Guilty Gear Xrd Rev.2\nPlatform: PS4, PS3
+SUMMARY:Guilty Gear Xrd Rev.2
+URL:https://en.wikipedia.org/wiki/Guilty_Gear_Xrd
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170526
+DTEND:20170526
+DESCRIPTION:Title: Rime\nPlatform: PC, PS4, XBO
+SUMMARY:Rime
+URL:https://en.wikipedia.org/wiki/Rime_(video_game)
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170526
+DTEND:20170526
+DESCRIPTION:Title: Samurai Warriors: Spirit of Sanada (North America)\nPlatform: PS4, PC
+SUMMARY:Samurai Warriors: Spirit of Sanada (North America)
+URL:https://en.wikipedia.org/wiki/Samurai_Warriors:_Spirit_of_Sanada
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170526
+DTEND:20170526
+DESCRIPTION:Title: Ultra Street Fighter II: The Final Challengers\nPlatform: NS
+SUMMARY:Ultra Street Fighter II: The Final Challengers
+URL:https://en.wikipedia.org/wiki/Ultra_Street_Fighter_II:_The_Final_Challengers
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170530
+DTEND:20170530
+DESCRIPTION:Title: Astro Duel Deluxe\nPlatform: NS
+SUMMARY:Astro Duel Deluxe
+URL:
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170530
+DTEND:20170530
+DESCRIPTION:Title: Danger Zone\nPlatform: PS4, PC
+SUMMARY:Danger Zone
+URL:
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170530
+DTEND:20170530
+DESCRIPTION:Title: MXGP3: The Official Motocross Videogame\nPlatform: PC, PS4, XBO
+SUMMARY:MXGP3: The Official Motocross Videogame
+URL:https://en.wikipedia.org/w/index.php?title=MXGP3:_The_Official_Motocross_Videogame&action=edit&redlink=1
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170530
+DTEND:20170530
+DESCRIPTION:Title: The Walking Dead: Season Three — Episode 5\nPlatform: PC, Mac, PS4, XBO, iOS, Android
+SUMMARY:The Walking Dead: Season Three — Episode 5
+URL:https://en.wikipedia.org/wiki/The_Walking_Dead:_A_New_Frontier
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170531
+DTEND:20170531
+DESCRIPTION:Title: Damascus Gear: Tokyo Battle HD Edition\nPlatform: PS4
+SUMMARY:Damascus Gear: Tokyo Battle HD Edition
+URL:https://en.wikipedia.org/w/index.php?title=Damascus_Gear:_Tokyo_Battle_HD_Edition&action=edit&redlink=1
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170531
+DTEND:20170531
+DESCRIPTION:Title: Thea: The Awakening\nPlatform: PS4, XBO
+SUMMARY:Thea: The Awakening
+URL:https://en.wikipedia.org/w/index.php?title=Thea:_The_Awakening&action=edit&redlink=1
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170601
+DTEND:20170601
+DESCRIPTION:Title: Seiken Densetsu Collection\nPlatform: NS
+SUMMARY:Seiken Densetsu Collection
+URL:https://en.wikipedia.org/wiki/Seiken_Densetsu_Collection
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170602
+DTEND:20170602
+DESCRIPTION:Title: Tekken 7\nPlatform: PC, PS4, XBO
+SUMMARY:Tekken 7
+URL:https://en.wikipedia.org/wiki/Tekken_7
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170606
+DTEND:20170606
+DESCRIPTION:Title: Cladun Returns: This is Sengoku!\nPlatform: PC, PS4, PSV
+SUMMARY:Cladun Returns: This is Sengoku!
+URL:https://en.wikipedia.org/wiki/NIS_America
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170606
+DTEND:20170606
+DESCRIPTION:Title: Dark Rose Valkyrie\nPlatform: PS4
+SUMMARY:Dark Rose Valkyrie
+URL:https://en.wikipedia.org/wiki/Dark_Rose_Valkyrie
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170606
+DTEND:20170606
+DESCRIPTION:Title: Dirt 4\nPlatform: PC, PS4, XBO
+SUMMARY:Dirt 4
+URL:https://en.wikipedia.org/wiki/Dirt_4
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170606
+DTEND:20170606
+DESCRIPTION:Title: Guardians of the Galaxy: The Telltale Series - Episode 2: Under Pressure\nPlatform: PC, Mac, PS4, XBO, iOS, Android
+SUMMARY:Guardians of the Galaxy: The Telltale Series - Episode 2: Under Pressure
+URL:https://en.wikipedia.org/wiki/Guardians_of_the_Galaxy:_The_Telltale_Series
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170606
+DTEND:20170606
+DESCRIPTION:Title: Superbeat: Xonic\nPlatform: PS4
+SUMMARY:Superbeat: Xonic
+URL:https://en.wikipedia.org/wiki/Superbeat:_Xonic
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170606
+DTEND:20170606
+DESCRIPTION:Title: Wipeout Omega Collection\nPlatform: PS4
+SUMMARY:Wipeout Omega Collection
+URL:https://en.wikipedia.org/wiki/Wipeout_Omega_Collection
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170613
+DTEND:20170613
+DESCRIPTION:Title: Cars 3: Driven to Win\nPlatform: PS4, PS3, XBO, X360, NS WiiU
+SUMMARY:Cars 3: Driven to Win
+URL:https://en.wikipedia.org/wiki/Cars_3:_Driven_to_Win
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170615
+DTEND:20170615
+DESCRIPTION:Title: MotoGP 17\nPlatform: PC, PS4, XBO
+SUMMARY:MotoGP 17
+URL:https://en.wikipedia.org/w/index.php?title=MotoGP_17&action=edit&redlink=1
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170616
+DTEND:20170616
+DESCRIPTION:Title: Arms\nPlatform: NS
+SUMMARY:Arms
+URL:https://en.wikipedia.org/wiki/Arms_(video_game)
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170620
+DTEND:20170620
+DESCRIPTION:Title: Dead by Daylight\nPlatform: PS4, XBO
+SUMMARY:Dead by Daylight
+URL:https://en.wikipedia.org/wiki/Dead_by_Daylight
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170620
+DTEND:20170620
+DESCRIPTION:Title: Final Fantasy XIV: Stormblood\nPlatform: PC, Mac, PS4
+SUMMARY:Final Fantasy XIV: Stormblood
+URL:https://en.wikipedia.org/wiki/Final_Fantasy_XIV:_Stormblood
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170620
+DTEND:20170620
+DESCRIPTION:Title: God Wars: Future Past\nPlatform: PS4, PSV
+SUMMARY:God Wars: Future Past
+URL:https://en.wikipedia.org/wiki/God_Wars:_Future_Past
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170620
+DTEND:20170620
+DESCRIPTION:Title: Nex Machina\nPlatform: PC, PS4
+SUMMARY:Nex Machina
+URL:https://en.wikipedia.org/wiki/Nex_Machina
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170623
+DTEND:20170623
+DESCRIPTION:Title: Get Even\nPlatform: PC, PS4, XBO
+SUMMARY:Get Even
+URL:https://en.wikipedia.org/wiki/Get_Even_(video_game)
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170627
+DTEND:20170627
+DESCRIPTION:Title: Danganronpa Another Episode: Ultra Despair Girls\nPlatform: PS4, PC
+SUMMARY:Danganronpa Another Episode: Ultra Despair Girls
+URL:https://en.wikipedia.org/wiki/Danganronpa_Another_Episode:_Ultra_Despair_Girls
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170627
+DTEND:20170627
+DESCRIPTION:Title: Summon Night 6: Lost Borders\nPlatform: PS4, PSV
+SUMMARY:Summon Night 6: Lost Borders
+URL:https://en.wikipedia.org/wiki/Summon_Night_6:_Lost_Borders
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170627
+DTEND:20170627
+DESCRIPTION:Title: The Golf Club 2\nPlatform: PC, PS4, XBO
+SUMMARY:The Golf Club 2
+URL:https://en.wikipedia.org/wiki/The_Golf_Club
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170627
+DTEND:20170627
+DESCRIPTION:Title: Valkyria Revolution\nPlatform: PS4, PSV, XBO
+SUMMARY:Valkyria Revolution
+URL:https://en.wikipedia.org/wiki/Valkyria_Revolution
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170630
+DTEND:20170630
+DESCRIPTION:Title: Crash Bandicoot N. Sane Trilogy\nPlatform: PS4
+SUMMARY:Crash Bandicoot N. Sane Trilogy
+URL:https://en.wikipedia.org/wiki/Crash_Bandicoot_N._Sane_Trilogy
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170630
+DTEND:20170630
+DESCRIPTION:Title: Micro Machines World Series\nPlatform: PC, PS4, XBO
+SUMMARY:Micro Machines World Series
+URL:https://en.wikipedia.org/wiki/Micro_Machines_World_Series
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170704
+DTEND:20170704
+DESCRIPTION:Title: That's You!\nPlatform: PS4
+SUMMARY:That's You!
+URL:https://en.wikipedia.org/w/index.php?title=That%27s_You!&action=edit&redlink=1
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170707
+DTEND:20170707
+DESCRIPTION:Title: Accel World VS. Sword Art Online\nPlatform: PS4, PSV
+SUMMARY:Accel World VS. Sword Art Online
+URL:https://en.wikipedia.org/w/index.php?title=Accel_World_VS._Sword_Art_Online&action=edit&redlink=1
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170711
+DTEND:20170711
+DESCRIPTION:Title: Derelict Fleet\nPlatform: PC, PS4
+SUMMARY:Derelict Fleet
+URL:https://en.wikipedia.org/w/index.php?title=Derelict_Fleet&action=edit&redlink=1
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170711
+DTEND:20170711
+DESCRIPTION:Title: Final Fantasy XII: The Zodiac Age\nPlatform: PS4
+SUMMARY:Final Fantasy XII: The Zodiac Age
+URL:https://en.wikipedia.org/wiki/Final_Fantasy_XII
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170718
+DTEND:20170718
+DESCRIPTION:Title: Children of Zodiarcs\nPlatform: PC, Mac, PS4
+SUMMARY:Children of Zodiarcs
+URL:https://en.wikipedia.org/w/index.php?title=Children_of_Zodiarcs&action=edit&redlink=1
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170718
+DTEND:20170718
+DESCRIPTION:Title: Fallen Legion\nPlatform: PSV, PS4
+SUMMARY:Fallen Legion
+URL:https://en.wikipedia.org/w/index.php?title=Fallen_Legion:_Flames_of_Rebellion&action=edit&redlink=1
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170718
+DTEND:20170718
+DESCRIPTION:Title: Yonder: The Cloud Catcher Chronicles\nPlatform: PC, PS4
+SUMMARY:Yonder: The Cloud Catcher Chronicles
+URL:https://en.wikipedia.org/wiki/Yonder:_The_Cloud_Catcher_Chronicles
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170721
+DTEND:20170721
+DESCRIPTION:Title: Splatoon 2\nPlatform: NS
+SUMMARY:Splatoon 2
+URL:https://en.wikipedia.org/wiki/Splatoon_2
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170725
+DTEND:20170725
+DESCRIPTION:Title: Aven Colony\nPlatform: PC, PS4, XBO
+SUMMARY:Aven Colony
+URL:https://en.wikipedia.org/wiki/Aven_Colony
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170725
+DTEND:20170725
+DESCRIPTION:Title: Pyre\nPlatform: PC, PS4
+SUMMARY:Pyre
+URL:https://en.wikipedia.org/wiki/Pyre_(video_game)
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170725
+DTEND:20170725
+DESCRIPTION:Title: Super CloudBuilt\nPlatform: PC, PS4
+SUMMARY:Super CloudBuilt
+URL:https://en.wikipedia.org/w/index.php?title=Super_CloudBuilt&action=edit&redlink=1
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170728
+DTEND:20170728
+DESCRIPTION:Title: Sundered \nPlatform: PC, PS4
+SUMMARY:Sundered 
+URL:https://en.wikipedia.org/w/index.php?title=Sundered_video_game&action=edit&redlink=1
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170729
+DTEND:20170729
+DESCRIPTION:Title: Dragon Quest XI\nPlatform: 3DS, PS4
+SUMMARY:Dragon Quest XI
+URL:https://en.wikipedia.org/wiki/Dragon_Quest_XI
+END:VEVENT
+BEGIN:VEVENT
 DTSTART:20170801
 DTEND:20170801
 DESCRIPTION:Title: Patapon Remastered\nPlatform: PS4
@@ -20,7 +1112,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20170808
 DTEND:20170808
-DESCRIPTION:Title: Hellblade: Senua's Sacrifice\nPlatform: Win, PS4
+DESCRIPTION:Title: Hellblade: Senua's Sacrifice\nPlatform: PC, PS4
 SUMMARY:Hellblade: Senua's Sacrifice
 URL:https://en.wikipedia.org/wiki/Hellblade:_Senua%27s_Sacrifice
 END:VEVENT
@@ -34,21 +1126,21 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20170808
 DTEND:20170808
-DESCRIPTION:Title: LawBreakers\nPlatform: Win, PS4
+DESCRIPTION:Title: LawBreakers\nPlatform: PC, PS4
 SUMMARY:LawBreakers
 URL:https://en.wikipedia.org/wiki/LawBreakers
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20170808
 DTEND:20170808
-DESCRIPTION:Title: Sine Mora EX\nPlatform: Win, NS, PS4, XBO
+DESCRIPTION:Title: Sine Mora EX\nPlatform: PC, NS, PS4, XBO
 SUMMARY:Sine Mora EX
 URL:https://en.wikipedia.org/wiki/Sine_Mora
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20170815
 DTEND:20170815
-DESCRIPTION:Title: Agents of Mayhem\nPlatform: Win, PS4, XBO
+DESCRIPTION:Title: Agents of Mayhem\nPlatform: PC, PS4, XBO
 SUMMARY:Agents of Mayhem
 URL:https://en.wikipedia.org/wiki/Agents_of_Mayhem
 END:VEVENT
@@ -69,28 +1161,28 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20170815
 DTEND:20170815
-DESCRIPTION:Title: Nidhogg 2\nPlatform: Win, Mac, PS4
+DESCRIPTION:Title: Nidhogg 2\nPlatform: PC, Mac, PS4
 SUMMARY:Nidhogg 2
 URL:https://en.wikipedia.org/wiki/Nidhogg_(video_game)#Sequel
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20170815
 DTEND:20170815
-DESCRIPTION:Title: Night Trap 25th Anniversary\nPlatform: Win, PS4
+DESCRIPTION:Title: Night Trap 25th Anniversary\nPlatform: PC, PS4
 SUMMARY:Night Trap 25th Anniversary
 URL:https://en.wikipedia.org/wiki/Night_Trap
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20170815
 DTEND:20170815
-DESCRIPTION:Title: Observer\nPlatform: Win, Mac, Lin, PS4, XBO
+DESCRIPTION:Title: Observer\nPlatform: PC, PS4, XBO
 SUMMARY:Observer
 URL:https://en.wikipedia.org/wiki/Observer_(video_game)
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20170815
 DTEND:20170815
-DESCRIPTION:Title: Sonic Mania\nPlatform: Win, NS, PS4, XBO
+DESCRIPTION:Title: Sonic Mania\nPlatform: PC, NS, PS4, XBO
 SUMMARY:Sonic Mania
 URL:https://en.wikipedia.org/wiki/Sonic_Mania
 END:VEVENT
@@ -104,7 +1196,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20170815
 DTEND:20170815
-DESCRIPTION:Title: The Pillars of The Earth Book 1: From The Ashes\nPlatform: Win, Mac, Lin, PS4, XBO
+DESCRIPTION:Title: The Pillars of The Earth Book 1: From The Ashes\nPlatform: PC, Mac, Lin, PS4, XBO
 SUMMARY:The Pillars of The Earth Book 1: From The Ashes
 URL:https://en.wikipedia.org/wiki/The_Pillars_of_the_Earth#Video_Game
 END:VEVENT
@@ -132,7 +1224,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20170822
 DTEND:20170822
-DESCRIPTION:Title: The Escapists 2\nPlatform: Win, PS4, XBO
+DESCRIPTION:Title: The Escapists 2\nPlatform: PC, PS4, XBO
 SUMMARY:The Escapists 2
 URL:https://en.wikipedia.org/wiki/The_Escapists_2
 END:VEVENT
@@ -146,21 +1238,21 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20170822
 DTEND:20170822
-DESCRIPTION:Title: White Day: A Labyrinth Named School\nPlatform: Win, PS4
+DESCRIPTION:Title: White Day: A Labyrinth Named School\nPlatform: PC, PS4
 SUMMARY:White Day: A Labyrinth Named School
 URL:https://en.wikipedia.org/wiki/White_Day:_A_Labyrinth_Named_School_(2015_video_game)
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20170824
 DTEND:20170824
-DESCRIPTION:Title: The Lost Child\nPlatform: PS4, Vita
+DESCRIPTION:Title: The Lost Child\nPlatform: PS4, PSV
 SUMMARY:The Lost Child
 URL:https://en.wikipedia.org#endnote_PublishedA
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20170825
 DTEND:20170825
-DESCRIPTION:Title: F1 2017\nPlatform: Win, PS4, XBO
+DESCRIPTION:Title: F1 2017\nPlatform: PC, PS4, XBO
 SUMMARY:F1 2017
 URL:https://en.wikipedia.org/wiki/F1_2017_(video_game)
 END:VEVENT
@@ -174,28 +1266,28 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20170825
 DTEND:20170825
-DESCRIPTION:Title: Naruto Shippuden: Ultimate Ninja Storm Legacy\nPlatform: Win, PS4, XBO
+DESCRIPTION:Title: Naruto Shippuden: Ultimate Ninja Storm Legacy\nPlatform: PC, PS4, XBO
 SUMMARY:Naruto Shippuden: Ultimate Ninja Storm Legacy
 URL:https://en.wikipedia.org/w/index.php?title=Naruto_Shippuden:_Ultimate_Ninja_Storm_Legacy&action=edit&redlink=1
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20170825
 DTEND:20170825
-DESCRIPTION:Title: One Piece: Unlimited World Red Deluxe Edition\nPlatform: Win, PS4
+DESCRIPTION:Title: One Piece: Unlimited World Red Deluxe Edition\nPlatform: PC, PS4
 SUMMARY:One Piece: Unlimited World Red Deluxe Edition
 URL:https://en.wikipedia.org/wiki/One_Piece:_Unlimited_World_Red
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20170829
 DTEND:20170829
-DESCRIPTION:Title: Absolver\nPlatform: Win, PS4, XBO
+DESCRIPTION:Title: Absolver\nPlatform: PC, PS4, XBO
 SUMMARY:Absolver
 URL:https://en.wikipedia.org/wiki/Absolver
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20170829
 DTEND:20170829
-DESCRIPTION:Title: Ark: Survival Evolved\nPlatform: Win, Mac, Lin, PS4, XBO
+DESCRIPTION:Title: Ark: Survival Evolved\nPlatform: PC, Mac, Lin, PS4, XBO
 SUMMARY:Ark: Survival Evolved
 URL:https://en.wikipedia.org/wiki/Ark:_Survival_Evolved
 END:VEVENT
@@ -216,6 +1308,13 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20170829
 DTEND:20170829
+DESCRIPTION:Title: Obduction\nPlatform: PS4
+SUMMARY:Obduction
+URL:
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20170829
+DTEND:20170829
 DESCRIPTION:Title: Pillars of Eternity: Complete Edition\nPlatform: PS4, XBO
 SUMMARY:Pillars of Eternity: Complete Edition
 URL:https://en.wikipedia.org/wiki/Pillars_of_Eternity
@@ -230,14 +1329,14 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20170829
 DTEND:20170829
-DESCRIPTION:Title: Warriors All-Stars\nPlatform: PS4, Win
+DESCRIPTION:Title: Warriors All-Stars\nPlatform: PS4, PC
 SUMMARY:Warriors All-Stars
 URL:https://en.wikipedia.org/wiki/Warriors_All-Stars
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20170829
 DTEND:20170829
-DESCRIPTION:Title: Windjammers\nPlatform: PS4, PSVita
+DESCRIPTION:Title: Windjammers\nPlatform: PS4, PSV
 SUMMARY:Windjammers
 URL:https://en.wikipedia.org/wiki/Windjammers_(video_game)
 END:VEVENT
@@ -251,7 +1350,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20170831
 DTEND:20170831
-DESCRIPTION:Title: Life Is Strange: Before the Storm — Episode 1\nPlatform: Win, PS4, XBO
+DESCRIPTION:Title: Life Is Strange: Before the Storm — Episode 1\nPlatform: PC, PS4, XBO
 SUMMARY:Life Is Strange: Before the Storm — Episode 1
 URL:https://en.wikipedia.org/wiki/Life_Is_Strange:_Before_the_Storm
 END:VEVENT
@@ -272,7 +1371,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20170905
 DTEND:20170905
-DESCRIPTION:Title: Utawarerumono: Mask of Truth\nPlatform: PS4, PSVita
+DESCRIPTION:Title: Utawarerumono: Mask of Truth\nPlatform: PS4, PSV
 SUMMARY:Utawarerumono: Mask of Truth
 URL:https://en.wikipedia.org/wiki/Utawarerumono
 END:VEVENT
@@ -286,14 +1385,14 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20170907
 DTEND:20170907
-DESCRIPTION:Title: KonoSuba\nPlatform: PS4, PSVita
+DESCRIPTION:Title: KonoSuba\nPlatform: PS4, PSV
 SUMMARY:KonoSuba
 URL:
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20170912
 DTEND:20170912
-DESCRIPTION:Title: Pro Evolution Soccer 2018\nPlatform: Win, PS3, PS4, X360, XBO
+DESCRIPTION:Title: Pro Evolution Soccer 2018\nPlatform: PC, PS3, PS4, X360, XBO
 SUMMARY:Pro Evolution Soccer 2018
 URL:https://en.wikipedia.org/wiki/Pro_Evolution_Soccer_2018
 END:VEVENT
@@ -307,23 +1406,16 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20170912
 DTEND:20170912
-DESCRIPTION:Title: Ys VIII: Lacrimosa of Dana\nPlatform: PS4, PSVita, Win
+DESCRIPTION:Title: Ys VIII: Lacrimosa of Dana\nPlatform: PS4, PSV, PC
 SUMMARY:Ys VIII: Lacrimosa of Dana
 URL:https://en.wikipedia.org/wiki/Ys_VIII:_Lacrimosa_of_Dana
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20170915
 DTEND:20170915
-DESCRIPTION:Title: Dishonored: Death of the Outsider\nPlatform: Win, PS4, XBO
+DESCRIPTION:Title: Dishonored: Death of the Outsider\nPlatform: PC, PS4, XBO
 SUMMARY:Dishonored: Death of the Outsider
 URL:https://en.wikipedia.org/wiki/Dishonored_2
-END:VEVENT
-BEGIN:VEVENT
-DTSTART:20170915
-DTEND:20170915
-DESCRIPTION:Title: Metroid: Samus Returns\nPlatform: 3DS
-SUMMARY:Metroid: Samus Returns
-URL:https://en.wikipedia.org/wiki/Metroid:_Samus_Returns
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20170915
@@ -335,14 +1427,14 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20170919
 DTEND:20170919
-DESCRIPTION:Title: Marvel vs. Capcom: Infinite\nPlatform: Win, PS4, XBO
+DESCRIPTION:Title: Marvel vs. Capcom: Infinite\nPlatform: PC, PS4, XBO
 SUMMARY:Marvel vs. Capcom: Infinite
 URL:https://en.wikipedia.org/wiki/Marvel_vs._Capcom:_Infinite
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20170919
 DTEND:20170919
-DESCRIPTION:Title: NBA 2K18\nPlatform: Win, NS PS3, PS4, X360, XBO
+DESCRIPTION:Title: NBA 2K18\nPlatform: PC, NS PS3, PS4, X360, XBO
 SUMMARY:NBA 2K18
 URL:https://en.wikipedia.org/wiki/NBA_2K18
 END:VEVENT
@@ -370,21 +1462,21 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20170922
 DTEND:20170922
-DESCRIPTION:Title: Project CARS 2\nPlatform: Win, PS4, XBO
+DESCRIPTION:Title: Project CARS 2\nPlatform: PC, PS4, XBO
 SUMMARY:Project CARS 2
 URL:https://en.wikipedia.org/wiki/Project_CARS_2
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20170922
 DTEND:20170922
-DESCRIPTION:Title: The Lego Ninjago Movie Videogame\nPlatform: Win, NS, PS4, XBO
+DESCRIPTION:Title: The Lego Ninjago Movie Videogame\nPlatform: PC, NS, PS4, XBO
 SUMMARY:The Lego Ninjago Movie Videogame
 URL:https://en.wikipedia.org/wiki/The_Lego_Ninjago_Movie_Videogame
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20170926
 DTEND:20170926
-DESCRIPTION:Title: Danganronpa V3: Killing Harmony\nPlatform: PS4, PSVita, Win
+DESCRIPTION:Title: Danganronpa V3: Killing Harmony\nPlatform: PS4, PSV, PC
 SUMMARY:Danganronpa V3: Killing Harmony
 URL:https://en.wikipedia.org/wiki/Danganronpa_V3:_Killing_Harmony
 END:VEVENT
@@ -398,7 +1490,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20170929
 DTEND:20170929
-DESCRIPTION:Title: FIFA 18\nPlatform: Win, NS PS3, PS4, X360, XBO
+DESCRIPTION:Title: FIFA 18\nPlatform: PC, NS PS3, PS4, X360, XBO
 SUMMARY:FIFA 18
 URL:https://en.wikipedia.org/wiki/FIFA_18
 END:VEVENT
@@ -412,16 +1504,9 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20171003
 DTEND:20171003
-DESCRIPTION:Title: Battle Chasers: Nightwar\nPlatform: Win, NS, PS4, XBO
+DESCRIPTION:Title: Battle Chasers: Nightwar\nPlatform: PC, NS, PS4, XBO
 SUMMARY:Battle Chasers: Nightwar
 URL:https://en.wikipedia.org/wiki/Battle_Chasers#Battle_Chasers:_Nightwar
-END:VEVENT
-BEGIN:VEVENT
-DTSTART:20171003
-DTEND:20171003
-DESCRIPTION:Title: Culdcept Revolt\nPlatform: 3DS
-SUMMARY:Culdcept Revolt
-URL:https://en.wikipedia.org/w/index.php?title=Culdcept_Revolt&action=edit&redlink=1
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20171005
@@ -431,30 +1516,30 @@ SUMMARY:Dragon's Dogma: Dark Arisen
 URL:https://en.wikipedia.org/wiki/Dragon%27s_Dogma:_Dark_Arisen
 END:VEVENT
 BEGIN:VEVENT
-DTSTART:20171006
-DTEND:20171006
-DESCRIPTION:Title: Mario & Luigi: Superstar Saga + Bowser's Minions\nPlatform: 3DS
-SUMMARY:Mario & Luigi: Superstar Saga + Bowser's Minions
-URL:https://en.wikipedia.org/wiki/Mario_%26_Luigi:_Superstar_Saga#Nintendo_3DS_remake
-END:VEVENT
-BEGIN:VEVENT
 DTSTART:20171010
 DTEND:20171010
-DESCRIPTION:Title: Middle-earth: Shadow of War\nPlatform: Win, PS4, XBO
+DESCRIPTION:Title: Middle-earth: Shadow of War\nPlatform: PC, PS4, XBO
 SUMMARY:Middle-earth: Shadow of War
 URL:https://en.wikipedia.org/wiki/Middle-earth:_Shadow_of_War
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20171010
 DTEND:20171010
-DESCRIPTION:Title: Touhou Kobuto V: Burst Battle\nPlatform: NS, PS4, PSVita
+DESCRIPTION:Title: Raid: World War II\nPlatform: PS4, XBO
+SUMMARY:Raid: World War II
+URL:
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20171010
+DTEND:20171010
+DESCRIPTION:Title: Touhou Kobuto V: Burst Battle\nPlatform: NS, PS4, PSV
 SUMMARY:Touhou Kobuto V: Burst Battle
 URL:https://en.wikipedia.org/wiki/Touhou_Project#Reception_and_fanworks
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20171013
 DTEND:20171013
-DESCRIPTION:Title: The Evil Within 2\nPlatform: Win, PS4, XBO
+DESCRIPTION:Title: The Evil Within 2\nPlatform: PC, PS4, XBO
 SUMMARY:The Evil Within 2
 URL:https://en.wikipedia.org/wiki/The_Evil_Within_2
 END:VEVENT
@@ -468,7 +1553,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20171017
 DTEND:20171017
-DESCRIPTION:Title: ELEX\nPlatform: Win, PS4, XBO
+DESCRIPTION:Title: ELEX\nPlatform: PC, PS4, XBO
 SUMMARY:ELEX
 URL:https://en.wikipedia.org/wiki/ELEX
 END:VEVENT
@@ -482,7 +1567,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20171017
 DTEND:20171017
-DESCRIPTION:Title: South Park: The Fractured but Whole\nPlatform: Win, PS4, XBO
+DESCRIPTION:Title: South Park: The Fractured but Whole\nPlatform: PC, PS4, XBO
 SUMMARY:South Park: The Fractured but Whole
 URL:https://en.wikipedia.org/wiki/South_Park:_The_Fractured_but_Whole
 END:VEVENT
@@ -503,28 +1588,35 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20171024
 DTEND:20171024
-DESCRIPTION:Title: Just Dance 2018\nPlatform: Win, NS, PS3, PS4, X360, XBO, Wii, Wii U
+DESCRIPTION:Title: Just Dance 2018\nPlatform: PC, NS, PS3, PS4, X360, XBO, Wii, WiiU
 SUMMARY:Just Dance 2018
 URL:https://en.wikipedia.org/wiki/Just_Dance_2018
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20171024
 DTEND:20171024
-DESCRIPTION:Title: Nights of Azure 2: Bride of the New Moon\nPlatform: Win, NS, PS4
+DESCRIPTION:Title: Nights of Azure 2: Bride of the New Moon\nPlatform: PC, NS, PS4
 SUMMARY:Nights of Azure 2: Bride of the New Moon
 URL:https://en.wikipedia.org/w/index.php?title=Nights_of_Azure_2:_Bride_of_the_New_Moon&action=edit&redlink=1
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20171024
 DTEND:20171024
-DESCRIPTION:Title: Yomawari: Midnight Shadows\nPlatform: Win, PS4, PSVita
+DESCRIPTION:Title: Yomawari: Midnight Shadows\nPlatform: PC, PS4, PSV
 SUMMARY:Yomawari: Midnight Shadows
 URL:https://en.wikipedia.org/wiki/Yomawari:_Midnight_Shadows
 END:VEVENT
 BEGIN:VEVENT
+DTSTART:20171025
+DTEND:20171025
+DESCRIPTION:Title: Hidden Agenda\nPlatform: PS4
+SUMMARY:Hidden Agenda
+URL:
+END:VEVENT
+BEGIN:VEVENT
 DTSTART:20171027
 DTEND:20171027
-DESCRIPTION:Title: Assassin's Creed: Origins\nPlatform: Win, PS4, XBO
+DESCRIPTION:Title: Assassin's Creed: Origins\nPlatform: PC, PS4, XBO
 SUMMARY:Assassin's Creed: Origins
 URL:https://en.wikipedia.org/wiki/Assassin%27s_Creed:_Origins
 END:VEVENT
@@ -538,49 +1630,42 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20171027
 DTEND:20171027
-DESCRIPTION:Title: Wolfenstein II: The New Colossus\nPlatform: Win, PS4, XBO
+DESCRIPTION:Title: Wolfenstein II: The New Colossus\nPlatform: PC, PS4, XBO
 SUMMARY:Wolfenstein II: The New Colossus
 URL:https://en.wikipedia.org/wiki/Wolfenstein_II:_The_New_Colossus
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20171103
 DTEND:20171103
-DESCRIPTION:Title: Call of Duty: WWII\nPlatform: Win, PS4, XBO
+DESCRIPTION:Title: Call of Duty: WWII\nPlatform: PC, PS4, XBO
 SUMMARY:Call of Duty: WWII
 URL:https://en.wikipedia.org/wiki/Call_of_Duty:_WWII
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20171110
 DTEND:20171110
-DESCRIPTION:Title: Need for Speed Payback\nPlatform: Win, PS4, XBO
+DESCRIPTION:Title: Need for Speed Payback\nPlatform: PC, PS4, XBO
 SUMMARY:Need for Speed Payback
 URL:https://en.wikipedia.org/wiki/Need_for_Speed_Payback
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20171114
 DTEND:20171114
-DESCRIPTION:Title: Demon Gaze II\nPlatform: PS4, PSVita
+DESCRIPTION:Title: Demon Gaze II\nPlatform: PS4, PSV
 SUMMARY:Demon Gaze II
 URL:https://en.wikipedia.org/wiki/Demon_Gaze#Sequel
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20171114
 DTEND:20171114
-DESCRIPTION:Title: Lego Marvel Super Heroes 2\nPlatform: Win, NS, PS4, XBO
+DESCRIPTION:Title: Lego Marvel Super Heroes 2\nPlatform: PC, NS, PS4, XBO
 SUMMARY:Lego Marvel Super Heroes 2
 URL:https://en.wikipedia.org/wiki/Lego_Marvel_Super_Heroes_2
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20171117
 DTEND:20171117
-DESCRIPTION:Title: Pokémon Ultra Sun and Ultra Moon\nPlatform: 3DS
-SUMMARY:Pokémon Ultra Sun and Ultra Moon
-URL:https://en.wikipedia.org/wiki/Pok%C3%A9mon_Sun_and_Moon#Pok.C3.A9mon_Ultra_Sun_and_Ultra_Moon
-END:VEVENT
-BEGIN:VEVENT
-DTSTART:20171117
-DTEND:20171117
-DESCRIPTION:Title: Star Wars Battlefront II\nPlatform: Win, PS4, XBO
+DESCRIPTION:Title: Star Wars Battlefront II\nPlatform: PC, PS4, XBO
 SUMMARY:Star Wars Battlefront II
 URL:https://en.wikipedia.org/wiki/Star_Wars_Battlefront_II_(2017_video_game)
 END:VEVENT
@@ -594,43 +1679,260 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART:20171130
 DTEND:20171130
-DESCRIPTION:Title: Vampyr\nPlatform: Win, PS4, XBO
+DESCRIPTION:Title: Vampyr\nPlatform: PC, PS4, XBO
 SUMMARY:Vampyr
 URL:https://en.wikipedia.org/wiki/Vampyr_(video_game)
 END:VEVENT
 BEGIN:VEVENT
-DTSTART:20180119
-DTEND:20180119
-DESCRIPTION:Title: Ni no Kuni II: Revenant Kingdom\nPlatform: Win, PS4
-SUMMARY:Ni no Kuni II: Revenant Kingdom
-URL:https://en.wikipedia.org/wiki/Ni_no_Kuni_II:_Revenant_Kingdom
+DTSTART:20171130
+DTEND:20171130
+DESCRIPTION:Title: Antisphere\nPlatform: PC, PS4, XBO
+SUMMARY:Antisphere
+URL:
 END:VEVENT
 BEGIN:VEVENT
-DTSTART:20180123
-DTEND:20180123
-DESCRIPTION:Title: Lost Sphear\nPlatform: Win, NS, PS4
-SUMMARY:Lost Sphear
-URL:https://en.wikipedia.org/wiki/Lost_Sphear
+DTSTART:20171130
+DTEND:20171130
+DESCRIPTION:Title: Call of Cthulhu\nPlatform: PC, PS4, XBO
+SUMMARY:Call of Cthulhu
+URL:https://en.wikipedia.org/wiki/Cyanide_(company)
 END:VEVENT
 BEGIN:VEVENT
-DTSTART:20180213
-DTEND:20180213
-DESCRIPTION:Title: Kingdom Come: Deliverance\nPlatform: Win, PS4, XBO
-SUMMARY:Kingdom Come: Deliverance
-URL:https://en.wikipedia.org/wiki/Kingdom_Come:_Deliverance
+DTSTART:20171130
+DTEND:20171130
+DESCRIPTION:Title: Chaos:Child\nPlatform: PS4, PSV
+SUMMARY:Chaos:Child
+URL:https://en.wikipedia.org/wiki/Chaos;Child
 END:VEVENT
 BEGIN:VEVENT
-DTSTART:20180227
-DTEND:20180227
-DESCRIPTION:Title: Far Cry 5\nPlatform: Win, PS4, XBO
-SUMMARY:Far Cry 5
-URL:https://en.wikipedia.org/wiki/Far_Cry_5
+DTSTART:20171130
+DTEND:20171130
+DESCRIPTION:Title: Conarium\nPlatform: PC, PS4, XBO
+SUMMARY:Conarium
+URL:
 END:VEVENT
 BEGIN:VEVENT
-DTSTART:20180320
-DTEND:20180320
-DESCRIPTION:Title: Penny-Punching Princess\nPlatform: NS, PSVita
-SUMMARY:Penny-Punching Princess
+DTSTART:20171130
+DTEND:20171130
+DESCRIPTION:Title: Death’s Gambit\nPlatform: PC, PS4
+SUMMARY:Death’s Gambit
+URL:
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20171130
+DTEND:20171130
+DESCRIPTION:Title: Dreadnought\nPlatform: PC, PS4
+SUMMARY:Dreadnought
+URL:https://en.wikipedia.org/wiki/Dreadnought_(video_game)
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20171130
+DTEND:20171130
+DESCRIPTION:Title: Dreams\nPlatform: PS4
+SUMMARY:Dreams
+URL:https://en.wikipedia.org/wiki/Dreams_(video_game)
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20171130
+DTEND:20171130
+DESCRIPTION:Title: Earth Defense Force 5\nPlatform: PS4
+SUMMARY:Earth Defense Force 5
+URL:https://en.wikipedia.org/wiki/Earth_Defense_Force
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20171130
+DTEND:20171130
+DESCRIPTION:Title: ECHO\nPlatform: PC, PS4
+SUMMARY:ECHO
+URL:
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20171130
+DTEND:20171130
+DESCRIPTION:Title: Fear Effect Sedna\nPlatform: PC, PS4, XBO
+SUMMARY:Fear Effect Sedna
+URL:https://en.wikipedia.org/wiki/Fear_Effect_2:_Retro_Helix#Revival
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20171130
+DTEND:20171130
+DESCRIPTION:Title: Girls und Panzer: Dream Tank Match \nPlatform: PS4
+SUMMARY:Girls und Panzer: Dream Tank Match 
+URL:https://en.wikipedia.org/w/index.php?title=Girls_und_Panzer:_Dream_Tank_Match&action=edit&redlink=1
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20171130
+DTEND:20171130
+DESCRIPTION:Title: Gorogoa\nPlatform: PC, PS4
+SUMMARY:Gorogoa
+URL:https://en.wikipedia.org/wiki/Gorogoa
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20171130
+DTEND:20171130
+DESCRIPTION:Title: Hand of Fate 2\nPlatform: PC, Mac, Lin, PS4
+SUMMARY:Hand of Fate 2
+URL:https://en.wikipedia.org/wiki/Hand_of_Fate_(video_game)
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20171130
+DTEND:20171130
+DESCRIPTION:Title: Insurgency: Sandstorm\nPlatform: PC, PS4, XBO
+SUMMARY:Insurgency: Sandstorm
+URL:https://en.wikipedia.org/wiki/Focus_Home_Interactive
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20171130
+DTEND:20171130
+DESCRIPTION:Title: Iron Harvest\nPlatform: PC, PS4, XBO
+SUMMARY:Iron Harvest
+URL:
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20171130
+DTEND:20171130
+DESCRIPTION:Title: Knights and Bikes\nPlatform: PC, PS4
+SUMMARY:Knights and Bikes
+URL:https://en.wikipedia.org/wiki/Double_Fine_Productions
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20171130
+DTEND:20171130
+DESCRIPTION:Title: Lightfield\nPlatform: PS4, XBO
+SUMMARY:Lightfield
+URL:
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20171130
+DTEND:20171130
+DESCRIPTION:Title: Link: The Unleashed Nexus remake\nPlatform: PS4
+SUMMARY:Link: The Unleashed Nexus remake
+URL:
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20171130
+DTEND:20171130
+DESCRIPTION:Title: Loot Rascals\nPlatform: PC, PS4
+SUMMARY:Loot Rascals
+URL:https://en.wikipedia.org/wiki/Loot_Rascals
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20171130
+DTEND:20171130
+DESCRIPTION:Title: Mosaic\nPlatform: PC, PS4
+SUMMARY:Mosaic
+URL:
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20171130
+DTEND:20171130
+DESCRIPTION:Title: Mystereet F: The Detectives’ Curtain Call\nPlatform: PS4, PSV
+SUMMARY:Mystereet F: The Detectives’ Curtain Call
+URL:
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20171130
+DTEND:20171130
+DESCRIPTION:Title: Nine Parchments\nPlatform: PC, PS4
+SUMMARY:Nine Parchments
+URL:https://en.wikipedia.org/wiki/Frozenbyte
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20171130
+DTEND:20171130
+DESCRIPTION:Title: Outcast: Second Contact\nPlatform: PC, PS4, XBO
+SUMMARY:Outcast: Second Contact
+URL:https://en.wikipedia.org/wiki/Outcast_(video_game)
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20171130
+DTEND:20171130
+DESCRIPTION:Title: Pinball FX 3\nPlatform: PC, PS4, XBO
+SUMMARY:Pinball FX 3
+URL:https://en.wikipedia.org/wiki/Pinball_FX_3
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20171130
+DTEND:20171130
+DESCRIPTION:Title: Shaq Fu: A Legend Reborn\nPlatform: PC, PS4, XBO, NS
+SUMMARY:Shaq Fu: A Legend Reborn
+URL:
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20171130
+DTEND:20171130
+DESCRIPTION:Title: Sonic Forces\nPlatform: PC, NS, PS4, XBO
+SUMMARY:Sonic Forces
+URL:https://en.wikipedia.org/wiki/Sonic_Forces
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20171130
+DTEND:20171130
+DESCRIPTION:Title: SteamWorld Dig 2\nPlatform: NS,PC, Mac, Lin, PS4
+SUMMARY:SteamWorld Dig 2
+URL:https://en.wikipedia.org/wiki/SteamWorld_Dig_2
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20171130
+DTEND:20171130
+DESCRIPTION:Title: Super Mega Baseball 2\nPlatform: PC, PS4, XBO
+SUMMARY:Super Mega Baseball 2
+URL:https://en.wikipedia.org/wiki/Super_Mega_Baseball
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20171130
+DTEND:20171130
+DESCRIPTION:Title: The Church in the Darkness\nPlatform: PC, Mac, PS4, XBO
+SUMMARY:The Church in the Darkness
+URL:https://en.wikipedia.org/wiki/The_Church_in_the_Darkness
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20171130
+DTEND:20171130
+DESCRIPTION:Title: The Elder Scrolls V: Skyrim\nPlatform: NS
+SUMMARY:The Elder Scrolls V: Skyrim
+URL:https://en.wikipedia.org/wiki/The_Elder_Scrolls_V:_Skyrim
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20171130
+DTEND:20171130
+DESCRIPTION:Title: The Wild Eight\nPlatform: PC, PS4, XBO
+SUMMARY:The Wild Eight
+URL:https://en.wikipedia.org/wiki/The_Wild_Eight
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20171130
+DTEND:20171130
+DESCRIPTION:Title: Tokyo Xanadu eX+\nPlatform: PS4
+SUMMARY:Tokyo Xanadu eX+
+URL:
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20171130
+DTEND:20171130
+DESCRIPTION:Title: Way of the Passive Fist\nPlatform: PS4
+SUMMARY:Way of the Passive Fist
+URL:https://en.wikipedia.org/w/index.php?title=Way_of_the_Passive_Fist&action=edit&redlink=1
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20171130
+DTEND:20171130
+DESCRIPTION:Title: Winning Post 8 2017\nPlatform: PC, PS4, PSV
+SUMMARY:Winning Post 8 2017
+URL:https://en.wikipedia.org/wiki/Winning_Post
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20171130
+DTEND:20171130
+DESCRIPTION:Title: Xenoblade Chronicles 2\nPlatform: NS
+SUMMARY:Xenoblade Chronicles 2
+URL:https://en.wikipedia.org/wiki/Xenoblade_Chronicles_2
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20171130
+DTEND:20171130
+DESCRIPTION:Title: XING: The Land Beyond\nPlatform: PC, PS4, PSVR
+SUMMARY:XING: The Land Beyond
 URL:
 END:VEVENT
 END:VCALENDAR

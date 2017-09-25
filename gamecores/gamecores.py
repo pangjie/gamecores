@@ -29,21 +29,20 @@ def calinit():
     # Clean database.
     db.purge()
     # Build and insert wiki source data.
-    src = {
-        'type': 'cal_src',
-        'active': True,
-        'modified_ts': '',
-        'update_ts': 0,
-        'year': 0,
-        'id': '',
-        'url': '',
-    }
+    src = {'type': 'cal_src',
+           'active': True,
+           'modified_ts': '',
+           'update_ts': 0,
+           'year': 0,
+           'id': '',
+           'url': ''}
     for i in xrange(2008, 2019):
         src['url'] = 'https://en.wikipedia.org/wiki/' +\
                      str(i) + '_in_video_gaming'
         src['year'] = i
         src['id'] = uuid(src['url'])
         db.insert(src)
+        print("Add source page of %s to database" % i)
     print("Init Fineshed!")
     return
 
@@ -57,18 +56,19 @@ def calupdate(deep):
     for i in db.search(Q.type == 'cal_src'):
         # Deep update or only update data after 2017
         if not deep and i['year'] < 2017:
-            print 'Jump to next year'
+            print("Without \'deep\' option. Skip %s." % (i['year']))
             continue
         # In case user updates too often or a source is not active.
         if time() - i['update_ts'] < 30 or not i['active']:
-            print 'Update too often'
+            print("Update too often. Please try it 30 sec later.")
             continue
         # In case the page isn't available or isn't changed.
         head = requests.head(i['url'])
         page_available = head.status_code == 200
         page_changed = head.headers['Last-Modified'] != i['modified_ts']
         if not page_available or not page_changed:
-            print 'Page is not changed by last update.'
+            print("Data source page of %s is not changed by last update." %
+                  i['year'])
             continue
         # Get the newest schedual from source urls.
         schedualed_tba = g.scrape_sch(i['url'])
@@ -265,5 +265,7 @@ Q = Query()
 if __name__ == '__main__':
     # calinit()
     # calupdate()
+    i = 4
+    print("%s" % i)
     calshow()
     # calstat()
